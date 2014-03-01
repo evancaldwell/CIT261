@@ -1,0 +1,144 @@
+/* ========= Reset Styles ========= */
+ul {
+	list-style: none;
+}
+
+li {
+	padding: 1px;
+	margin: 0;
+}
+
+
+/* ======== General Styles ======== */
+.btn {
+	border-radius: 3px;
+	border: 1px solid #587C7C;
+	padding: 3px;
+	margin: 3px;
+	cursor: pointer;
+}
+
+.btn-default {
+	width: -moz-available;
+	width: -webkit-available;
+}
+
+.btn-add-new {
+
+}
+
+.btn-cloud {
+
+}
+
+input {
+	border-radius: 4px;
+	border: 1px solid #587C7C;
+	margin: 2px;
+	padding: 2px;
+}
+
+.item-list > li:nth-child(2n) {
+	background: #B3FCFC;
+}
+
+.sublist {
+
+}
+
+.sublist li {
+	list-style: circle;
+}
+
+.header {
+	background: #337c7c;
+	height: 60px;
+}
+
+.header * {
+	float: left;
+	margin: 5px;
+}
+
+.overlay {
+	/* display: none; /* QUES: does this even need to be here? */
+	left: 110%;
+}
+
+
+/* ======== Specific Styles ======== */
+#add-item-btn {
+	float: right;
+}
+
+.cloud-icon {
+	float: right;
+}
+
+.form {
+
+}
+
+.form-auth {
+	margin: 75px auto;
+	width: -moz-max-content;
+	width: -webkit-max-content; /* QUES: not sure if this works for webkit */
+}
+
+
+/* ----------- Login View ------------ */
+#login {
+	background: #8fc9c9; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover,  #8fc9c9 0%, #337c7c 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#8fc9c9), color-stop(100%,#337c7c)); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover,  #8fc9c9 0%,#337c7c 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover,  #8fc9c9 0%,#337c7c 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover,  #8fc9c9 0%,#337c7c 100%); /* IE10+ */
+	background: radial-gradient(ellipse at center,  #8fc9c9 0%,#337c7c 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8fc9c9', endColorstr='#337c7c',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	z-index: 30;
+}
+
+
+/* ----------- Signup View ------------ */
+#signup {
+	background: #8fc9c9; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover,  #8fc9c9 0%, #337c7c 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#8fc9c9), color-stop(100%,#337c7c)); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover,  #8fc9c9 0%,#337c7c 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover,  #8fc9c9 0%,#337c7c 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover,  #8fc9c9 0%,#337c7c 100%); /* IE10+ */
+	background: radial-gradient(ellipse at center,  #8fc9c9 0%,#337c7c 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8fc9c9', endColorstr='#337c7c',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	z-index: 40;
+}
+
+/* ----------- New Item View ------------ */
+#new-item {
+	background: white;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	z-index: 20;
+}
+
+/* ----------- Word Cloud View ------------ */
+#wordcloud {
+	background: white;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	z-index: 10;
+}
