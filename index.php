@@ -98,7 +98,7 @@
 			</div>
 		</div>
 		<div id="new-item" class="overlay">
-			<textarea name="newItemInput" id="new-item-input" cols="30" rows="10" class="item-input"></textarea>
+			<textarea name="newItemInput" id="new-item-input" cols="30" rows="10" class="item-input" placeholder="Add a new item"></textarea>
 			<div class="done-o-meter">
 				<img src="" alt="">
 				<img src="" alt="">
