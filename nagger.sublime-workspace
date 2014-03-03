@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"margin",
+				"margin-left"
+			],
+			[
 				"marg",
 				"margin"
 			],
@@ -144,10 +148,6 @@
 				"margin"
 			],
 			[
-				"margin",
-				"margin-top"
-			],
-			[
 				"rej",
 				"rejectedGrid"
 			],
@@ -207,6 +207,22 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "index.php",
+			"settings":
+			{
+				"buffer_size": 3447,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "css/style.css",
+			"settings":
+			{
+				"buffer_size": 4027,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "Packages/Python/Python.sublime-build",
 	"command_palette":
@@ -402,6 +418,7 @@
 	},
 	"file_history":
 	[
+		"/C/xampp/htdocs/cit261/css/desktop.ini",
 		"/C/xampp/htdocs/cs261/index.php",
 		"/C/xampp/htdocs/cs261/css/style.css",
 		"/C/Users/evan/Google Drive/School/CIT225/from class 2-5.sql",
@@ -528,8 +545,7 @@
 		"/C/users/evan/appdata/local/temp/sublime-sftp-browse-1378872038/siri_pa/home/SIRI/web2py/applications/siri_admin/views/familysearch/showstudents.html",
 		"/C/users/evan/appdata/local/temp/sublime-sftp-browse-1378872167/siri_pa/home/SIRI/web2py/applications/siri_admin/views/apply.html",
 		"/C/Users/evan/Dropbox/Projects/packnrack/scroll version/script/jquery.scrollpath.js",
-		"/C/Users/evan/Dropbox/Projects/packnrack/scroll version/script/demo.js",
-		"/C/Users/evan/Dropbox/Projects/packnrack/scroll version/index.html"
+		"/C/Users/evan/Dropbox/Projects/packnrack/scroll version/script/demo.js"
 	],
 	"find":
 	{
@@ -763,8 +779,73 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "index.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3447,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3019,
+								3019
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 414.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "css/style.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4027,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1325,
+								1325
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 603.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],

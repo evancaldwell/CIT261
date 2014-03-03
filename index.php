@@ -36,7 +36,9 @@
 					</li>
 					<li>
 						<img src="" alt="">
-						<p class="dropdown">Finish CIT 261 project<span>&nbsp;&nbsp;&nbsp;></span></p>
+						<p class="dropdown">Finish CIT 261 project
+							<span class="glyph"><img src="img/icons/glyphicons_213_up_arrow.png"></span>
+						</p>
 						<ul class="sublist">
 							<li>final design</li>
 							<li>HTML/CSS</li>
@@ -53,7 +55,9 @@
 					</li>
 					<li>
 						<img src="" alt="">
-						<p>Become world's best developer</p>
+						<p>Become world's best developer
+							<span class="glyph"><img src="img/icons/glyphicons_212_down_arrow.png"></span>
+						</p>
 					</li>
 					<li>
 						<img src="" alt="">
@@ -61,9 +65,16 @@
 					</li>
 				</ul>
 			</div>
-			<div class="cloud-icon">
-				<button class="btn btn-cloud"><img src="" alt="cloud"></button>
-			</div>
+			<div class="button-bar">
+				<div class="other-btn">
+					<button>other</button>
+				</div>
+				<div class="cloud-btn">
+					<button class=""><img src="" alt="cloud"></button>
+				</div>
+				<div class="new-item-btn">
+					<button class="btn-half-circle"><img src="img/icons/glyphicons_190_circle_plus.png"></button>
+				</div>
 		</div>
 
 		<!-- ============= Hidden divs ============= -->
