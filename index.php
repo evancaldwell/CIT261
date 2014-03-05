@@ -62,17 +62,9 @@
 					</li>
 				</ul>
 			</div>
-			<div class="button-bar">
-				<div class="other-btn">
-					<button>other</button>
-				</div>
-				<div class="cloud-btn">
-					<button class=""><img src="" alt="cloud"></button>
-				</div>
-				<div class="new-item-btn">
-					<button class="btn-half-circle"><img src="img/icons/glyphicons_190_circle_plus.png"></button>
-				</div>
-		</div>
+			<div class="cloud-icon">
+				<img src="img/icons/glyphicons_412_cloud_plus.png" alt="cloud">
+			</div>
 
 		<!-- ============= Hidden divs ============= -->
 		<div id="login" class="overlay">
