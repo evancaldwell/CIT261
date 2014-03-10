@@ -212,28 +212,32 @@
 	"buffers":
 	[
 		{
-			"file": "index.php",
+			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 3580,
-				"line_ending": "Windows"
+				"buffer_size": 3390,
+				"line_ending": "Unix"
 			}
 		},
 		{
 			"file": "css/style.css",
 			"settings":
 			{
-				"buffer_size": 3336,
-				"line_ending": "Windows"
+				"buffer_size": 4378,
+				"line_ending": "Unix"
 			}
 		}
 	],
 	"build_system": "Packages/Python/Python.sublime-build",
 	"command_palette":
 	{
-		"height": 219.0,
+		"height": 81.0,
 		"selected_items":
 		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
 			[
 				"uper",
 				"Convert Case: Upper Case"
@@ -257,10 +261,6 @@
 			[
 				"filed",
 				"FileDiffs: Menu"
-			],
-			[
-				"install",
-				"Package Control: Install Package"
 			],
 			[
 				"sspl",
@@ -423,8 +423,11 @@
 	"file_history":
 	[
 		"/C/Users/evan/Google Drive/School/COMM 130/website/style.css",
-		"/C/xampp/htdocs/cit261/css/style.css",
 		"/C/Users/evan/Google Drive/School/COMM 130/website/P7 Web Page final.html",
+		"/C/Users/evan/Google Drive/School/COMM 130/website/P7 Web Page Draft A Example.html.html",
+		"/C/xampp/htdocs/index - Copy.php",
+		"/C/xampp/htdocs/cit261/css/style.css",
+		"/C/xampp/htdocs/cit261/index.php",
 		"/C/Users/evan/Google Drive/School/COMM 130/website/P7Draft.html",
 		"/C/Users/evan/Light Table/LightTable/core/css/themes/eclipse.css",
 		"/C/tmp/kingdom_import.csv",
@@ -546,10 +549,7 @@
 		"/C/users/evan/appdata/local/temp/sublime-sftp-browse-1381284642/siri_pa/home/SIRI/web2py/gluon/tools.py",
 		"/C/users/evan/appdata/local/temp/sublime-sftp-browse-1380898477/siri_pa/home/SIRI/web2py/applications/siri_admin/views/appadmin.html",
 		"/C/users/evan/appdata/local/temp/sublime-sftp-browse-1378871856/siri_pa/home/SIRI/web2py/applications/siri_admin/controllers/familysearch.py",
-		"/C/users/evan/appdata/local/temp/sublime-sftp-browse-1378902117/siri_pa/home/SIRI/web2py/applications/siri_admin/views/familysearch/trackvolunteers.html",
-		"/C/users/evan/appdata/local/temp/sublime-sftp-browse-1378901702/siri_pa/home/SIRI/web2py/applications/siri_admin/views/familysearch/volunteerupdate.html",
-		"/C/users/evan/appdata/local/temp/sublime-sftp-browse-1378901563/siri_pa/home/SIRI/web2py/applications/siri_admin/views/familysearch/showvolunteers.html",
-		"/C/users/evan/appdata/local/temp/sublime-sftp-browse-1378871623/siri_pa/home/SIRI/web2py/applications/siri_admin/views/familysearch/register.html"
+		"/C/users/evan/appdata/local/temp/sublime-sftp-browse-1378902117/siri_pa/home/SIRI/web2py/applications/siri_admin/views/familysearch/trackvolunteers.html"
 	],
 	"find":
 	{
@@ -788,19 +788,19 @@
 			[
 				{
 					"buffer": 0,
-					"file": "index.php",
+					"file": "index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3580,
+						"buffer_size": 3390,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1927,
-								1927
+								1770,
+								1675
 							]
 						],
 						"settings":
@@ -808,11 +808,12 @@
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1110.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -824,15 +825,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3336,
+						"buffer_size": 4378,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								920,
-								920
+								627,
+								627
 							]
 						],
 						"settings":
@@ -844,7 +845,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 99.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
