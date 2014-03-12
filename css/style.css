@@ -59,12 +59,19 @@ table {
 	width: -webkit-available;
 }
 
+.btn-close {  /* TODO: the positioning here is not working perfectly */
+	width: 15px;
+	position: relative;
+	left: 89%;
+	top: 5px;
+}
+
 .btn-add-new {
 
 }
 
 .btn-cloud {
-
+	cursor: pointer;
 }
 
 input {
@@ -111,8 +118,15 @@ input {
 .overlay {
 	/* display: none; /* QUES: does this even need to be here? */
 	/*left: 100%;*/
+	right: 0;
 	width: 0;
 	overflow: hidden;
+}
+
+.overlay > div {  /* TODO: can we set a width larger than the viewport? */
+	width: -moz-available;
+	width: -webkit-available;
+	width: available;
 }
 
 .show-overlay {
@@ -121,8 +135,8 @@ input {
 	box-shadow: 2px 2px 2px darkgrey;
 	width: 95%;
 	height: 95%;
-	-webkit-transition:width 1s; /* For Safari 3.1 to 6.0 */
-	transition:width 1s;
+	-webkit-transition:width 0.3s ease-out; /* For Safari 3.1 to 6.0 */
+	transition:width 0.3s ease-out;
 }
 
 .hide-overlay {  /* probably need a callback function or something to remove styles after transition */
@@ -131,8 +145,8 @@ input {
 	margin: 5px 0;
 	border: 2px solid black;
 	box-shadow: 2px 2px 2px darkgrey;
-	-webkit-transition:width 1s; /* For Safari 3.1 to 6.0 */
-	transition:width 1s;
+	-webkit-transition:width 0.3s ease-in; /* For Safari 3.1 to 6.0 */
+	transition:width 0.3s ease-in;
 }
 
 .show-sublist {
@@ -165,10 +179,12 @@ input {
 	border-radius: 5px 5px 0 0;
 	width: 45px;
 	height: 50px;
+	cursor: pointer;
 }
 
 #add-item-btn * {
-	margin: 10px auto 0;
+	margin: 5px auto 0;
+	width: 100%;
 }
 
 .cloud-icon {
@@ -239,4 +255,13 @@ input {
 	height: 100%;
 	top: 0;
 	z-index: 10;
+}
+
+#wordcloud-inner {
+	margin: 50% 20px;
+}
+
+#wordcloud-inner > div {
+	float: left;
+	padding: 3px;
 }
