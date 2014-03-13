@@ -9,7 +9,7 @@
   <script type="text/javascript" src="js/server.js"></script>
   <script type="text/javascript" src="js/nagger.js"></script>
 </head>
-<body>
+<body oncreate="setup();" onload="setup1();">
 <div id="container">
   <div class="header"> <img class="logo-img" src="" alt="">
     <div class="logo-txt">
@@ -47,10 +47,10 @@
     </ul>
   </div>
   <div id="action-bar">
-    <div id="add-item-btn" onclick="showOverlay(this);">
+    <div id="add-item-btn" onclick="showNewItemView(this);">
       <img class="btn-add-new" src="img/icons/glyphicons_190_circle_plus.png" alt="add new item">
     </div>
-    <div class="btn-cloud" onclick="buildWordCloud(this);">
+    <div id="wordcloud-btn" class="btn-cloud" onclick="buildWordCloud(this, showWordcloudView);">
       <img class="cloud-icon" src="img/icons/glyphicons_412_cloud_plus.png" alt="cloud">
     </div>
   </div>
@@ -94,7 +94,7 @@
 </div>
 <div id="new-item" class="overlay">
   <div>
-    <div class="btn btn-default btn-close" onclick="hideOverlay(this, collapse);" >x</div>
+    <div class="btn btn-default btn-close" onclick="hideNewItemView(this);" >x</div>
     <h2>Add a new item</h2>
     <textarea name="newItemInput" id="new-item-input" cols="30" rows="10" class="item-input"></textarea>
     <div class="done-o-meter"> <img src="" alt=""> <img src="" alt="">
@@ -109,6 +109,7 @@
   </div>
 </div>
 <div id="wordcloud" class="overlay">
+  <div class="btn btn-default btn-close" onclick="hideWordcloudView(this);" >x</div>
   <div id="wordcloud-inner">
   </div>
 </div>
