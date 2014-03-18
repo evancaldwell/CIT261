@@ -53,6 +53,7 @@ html, body {
 #container {
 	width: 100%;
 	height: 100%;
+	position: absolute;
 	overflow: hidden;
 }
 
@@ -77,7 +78,7 @@ html, body {
 }
 
 .btn-add-new {
-
+		
 }
 
 .btn-cloud {
@@ -99,15 +100,49 @@ input {
 	background: #B3FCFC;
 }
 
-.sublist {
+.item-action {
+	float: right;
+	cursor: pointer;
+}
+
+.item-action > div {
+	height: 0;
+	overflow: hidden;
+	-webkit-transition: height 0.5s;
+	transition: height 0.5s;
+}
+
+.item-action > div > div {
+	background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #8B0000;
+    border-radius: 5px 0 5px 5px;
+    overflow: hidden;
+    padding: 5px 10px;
+    position: relative;
+    right: 50px;
+}
+
+.item-action > div ul li {
 	margin: 5px 0;
-	padding: 5px;
+}
+
+.sublist {
+	height: 0;
+	overflow: hidden;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
 	background: #8fc9c9;
+	-webkit-transition: height 0.5s;
+	transition: height 0.5s;
 }
 
 .sublist li {
 	list-style: circle;
 	margin-left: 25px;
+}
+
+.new-sublist {
+
 }
 
 .glyph img {
@@ -125,17 +160,23 @@ input {
 	margin: 5px;
 }
 
-.overlay {  /* testing Br. B's suggestion to animate the right property instead of adding a class */
+.overlay {
 	left: 100%;
-	margin-top: 45px;
-	/*width: 0;*/
+	/*margin-top: 45px;*/
+	/*border: 1px solid grey;*/
 	overflow: scroll;
-	border: 1px solid grey;
+	width: 100%;
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
 	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
 	box-sizing: border-box;
 	-webkit-transition:left 0.5s; /* For Safari 3.1 to 6.0 */
 	transition:left 0.5s;
+	cursor: pointer;
+}
+
+.overlay-inner {
+	margin: 45px 0 45px 45px;
+	background: white;
 }
 
 .show-sublist {
@@ -237,9 +278,10 @@ input {
 
 /* ----------- Word Cloud View ------------ */
 #wordcloud {
-	background: white;
+	/*background: white;*/
 	position: absolute;
 	top: 0;
+	height: 100%;
 	z-index: 10;
 }
 

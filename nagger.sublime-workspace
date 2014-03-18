@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"hide",
+				"hideNewItemView"
+			],
+			[
+				"new",
+				"new-item"
+			],
+			[
 				"build",
 				"buildWordArray"
 			],
@@ -227,7 +235,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 3580,
+				"buffer_size": 4223,
 				"line_ending": "Unix"
 			}
 		},
@@ -235,7 +243,7 @@
 			"file": "css/style.css",
 			"settings":
 			{
-				"buffer_size": 5826,
+				"buffer_size": 6170,
 				"line_ending": "Unix"
 			}
 		},
@@ -243,7 +251,7 @@
 			"file": "js/nagger.js",
 			"settings":
 			{
-				"buffer_size": 2139,
+				"buffer_size": 4045,
 				"line_ending": "Unix"
 			}
 		}
@@ -251,9 +259,29 @@
 	"build_system": "Packages/Python/Python.sublime-build",
 	"command_palette":
 	{
-		"height": 81.0,
+		"height": 104.0,
 		"selected_items":
 		[
+			[
+				"ssphp",
+				"Set Syntax: PHP"
+			],
+			[
+				"bhf",
+				"BracketHighlighter: Fold Bracket Content"
+			],
+			[
+				"bhr",
+				"BracketHighlighter: Remove Brackets"
+			],
+			[
+				"brack",
+				"BracketHighlighter: Fold Bracket Content"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
 			[
 				"install",
 				"Package Control: Install Package"
@@ -293,10 +321,6 @@
 			[
 				"sssql",
 				"Set Syntax: SQL"
-			],
-			[
-				"instal",
-				"Package Control: Install Package"
 			],
 			[
 				"sscss",
@@ -419,7 +443,7 @@
 				"Set Syntax: Python"
 			]
 		],
-		"width": 400.0
+		"width": 464.0
 	},
 	"console":
 	{
@@ -442,10 +466,10 @@
 	},
 	"file_history":
 	[
+		"/C/Users/evan/Google Drive/School/COMM 130/website/P7 Web Page final.html",
+		"/C/Users/evan/Google Drive/School/COMM 130/website/style.css",
 		"/C/xampp/htdocs/cit261/css/style.css",
 		"/C/xampp/htdocs/cit261/index.html",
-		"/C/Users/evan/Google Drive/School/COMM 130/website/style.css",
-		"/C/Users/evan/Google Drive/School/COMM 130/website/P7 Web Page final.html",
 		"/C/Users/evan/Google Drive/School/COMM 130/website/P7 Web Page Draft A Example.html.html",
 		"/C/xampp/htdocs/index - Copy.php",
 		"/C/xampp/htdocs/cit261/index.php",
@@ -573,7 +597,7 @@
 	],
 	"find":
 	{
-		"height": 34.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -587,6 +611,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"button",
+			"right",
 			"console",
 			"out",
 			"0.5s",
@@ -712,9 +738,7 @@
 			"MEMBER",
 			"member(?!_)",
 			"current_r",
-			"system_user_name",
-			"_lab_(?!f)",
-			"system_user_lab(?=_)"
+			"system_user_name"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -812,28 +836,73 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3580,
+						"buffer_size": 4223,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3548,
-								3548
+								4020,
+								4020
 							]
 						],
 						"settings":
 						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close"
+							],
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
 							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"translate_tabs_to_spaces": true,
+							"word_wrap": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1521.0,
+						"translation.y": 1966.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
@@ -845,19 +914,63 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5826,
+						"buffer_size": 6170,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5760,
-								5760
+								2729,
+								2729
 							]
 						],
 						"settings":
 						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close"
+							],
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
@@ -865,7 +978,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 2238.0,
+						"translation.y": 3056.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -877,26 +990,71 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2139,
+						"buffer_size": 4045,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1546,
-								1546
+								1783,
+								1783
 							]
 						],
 						"settings":
 						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close"
+							],
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 736.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -907,7 +1065,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 28.0
+		"height": 27.0
 	},
 	"input":
 	{
@@ -951,7 +1109,7 @@
 	"project": "nagger.sublime-project",
 	"replace":
 	{
-		"height": 62.0
+		"height": 50.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -978,6 +1136,10 @@
 			[
 				"",
 				"C:\\Users\\evan\\Google Drive\\School\\CIT225\\CIT225.sublime-project"
+			],
+			[
+				"313",
+				"C:\\Users\\evan\\Dropbox\\Projects\\cs313.sublime-project"
 			]
 		],
 		"width": 380.0

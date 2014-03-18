@@ -21,6 +21,10 @@ function allDone(theDataWeGotBack) {
 
 //A function for setting up the page oncreate
 function setup() {
+	var loginCookie = true
+	if (loginCookie == false) {
+		showLoginView()
+	}
 	var newItemBtn = $('add-item-btn');
 	var newItemView = $('new-item');
 	newItemBtn.newItemView = newItemView;
@@ -32,10 +36,11 @@ function setup() {
 
 //onload
 function setup1() {
-	var container = $('container')
-	container.style.height = window.innerHeight
-	var viewWidth = container.offsetWidth
-	console.log(window.innerHeight)
+	// var container = $('container')
+	// container.style.height = window.innerHeight + 'px'
+	// container.style.width = window.innerWidth + 'px'
+	// var viewWidth = container.offsetWidth
+	// console.log(window.innerWidth)
 	// var overlays = document.getElementsByClassName('overlay')
 	// for (i=0; i<overlays.length; ++i) {
 	// 	overlays[i].style.width = viewWidth - 45
@@ -44,38 +49,85 @@ function setup1() {
 
 // ============ page animation functions ============
 function showWordcloudView(el) {
+	var a = 0
 	var viewWidth = $('container').offsetWidth
 	var viewHeight = $('container').offsetHeight
 	var div = $('wordcloud')
-	div.style.width = viewWidth - 45 + 'px'
-	div.style.height = viewHeight - 90 + 'px'
-	div.style.left = '45px'
-}
-
-function hideWordcloudView(el) {
-	var viewWidth = $('container').offsetWidth
-	var viewHeight = $('container').offsetHeight
-	var div = $('wordcloud')
-	div.style.left = '100%'
+	var newItemView = $('new-item')
+	var login = $('login')
+	var signup = $('signup')
+	div.style.left = '0px'
+	div.children[0].style.height = viewHeight - 90 + 'px'
+	hideView(newItemView)
+	hideView(login)
+	hideView(signup)
+	for (i=0; i<6; i++) {
+		a += (i*0.05)
+		setTimeout(fadeTransparency(div, a, i), 1000)
+		
+	}
 }
 
 function showNewItemView(el) {
+	var a = 0
 	var viewWidth = $('container').offsetWidth
 	var viewHeight = $('container').offsetHeight
 	var div = $('new-item')
-	div.style.width = viewWidth - 45 + 'px'
-	div.style.height = viewHeight - 90 + 'px'
-	div.style.left = '45px'
+	var wordcloud = $('wordcloud')
+	var login = $('login')
+	var signup = $('signup')
+	div.style.left = '0px'
+	div.children[0].style.height = viewHeight - 90 + 'px'
+	hideView(wordcloud)
+	hideView(login)
+	hideView(signup)
+	for (i=0; i<6; i++) {
+		a += (i*0.05)
+		setTimeout(fadeTransparency(div, a, i), 1000)
+		
+	}
 }
 
-function hideNewItemView(el) {
+function showLoginView() {
 	var viewWidth = $('container').offsetWidth
 	var viewHeight = $('container').offsetHeight
-	var div = $('new-item')
-	div.style.left = '100%'
+	var div = $('login')
+	var wordcloud = $('wordcloud')
+	var newItemView = $('new-item')
+	var signup = $('signup')
+	div.style.left = '0px'
+	div.style.height = viewHeight + 'px'
+	div.style.width = viewWidth + 'px'
+	hideView(wordcloud)
+	hideView(newItemView)
+	hideView(signup)
 }
 
+function hideView(el) {
+	el.style.left = '100%'
+}
 
+function fadeTransparency(div, a, i) {
+	div.style.background = 'rgba(100,100,100,' + a + ')'
+}
+
+function showSublist(el) {
+	var sublist = el.getElementsByTagName("UL")[0];
+}
+
+function showTooltip(el) {
+	var div = el.children[1]
+	div.style.overflow = 'visible'
+	div.style.height = '60px'
+	el.onclick = function() {hideTooltip(this)}
+}
+
+function hideTooltip(el) {
+	var div = el.children[1]
+	div.style.overflow = 'hidden'
+	div.style.height = '0px'
+	el.onclick = function() {showTooltip(this)}
+}
 
 
 

@@ -5,11 +5,12 @@
   <meta charset="utf-8" />
   <meta name="keywords" content="personal, productivity, task management, GTD">
   <meta name="description" content="Best personal productivity, task management app ever!">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scaleable=no">
   <link href="css/style.css" rel="stylesheet">
   <script type="text/javascript" src="js/server.js"></script>
   <script type="text/javascript" src="js/nagger.js"></script>
 </head>
-<body oncreate="setup();" onload="setup1();">
+<body onload="setup();">
 <div id="container">
   <div class="header"> <img class="logo-img" src="" alt="">
     <div class="logo-txt">
@@ -20,11 +21,23 @@
     <ul class="item-list main-item-list">
       <li> <img src="" alt="">
         <p>Dig a hole in the back yard</p>
+        <div class="item-action" onclick="showTooltip(this);">
+          <p>...</p>
+          <div>
+            <div>
+              <ul>
+                <li>edit</li>
+                <li>delete</li>
+              </ul>
+            </div>
+          </div>  
+        </div>
       </li>
       <li> <img src="" alt="">
         <p>Pick up one of the kids from soccer</p>
       </li>
-      <li> <img src="" alt="">
+      <li onclick="showSublist(this);"> 
+        <img src="" alt="">
         <p class="dropdown">Finish CIT 261 project<span>&nbsp;&nbsp;&nbsp;></span></p>
         <ul class="sublist">
           <li>final design</li>
@@ -92,25 +105,26 @@
     <button class="btn btn-default">Sign Up</button>
   </div>
 </div>
-<div id="new-item" class="overlay">
-  <div>
-    <div class="btn btn-default btn-close" onclick="hideNewItemView(this);" >x</div>
+<div id="new-item" class="overlay" onclick="hideView(this);">
+  <div class="overlay-inner">
+    <div class="btn btn-default btn-close" onclick="hideView(this.parentNode);" >x</div>
     <h2>Add a new item</h2>
     <textarea name="newItemInput" id="new-item-input" cols="30" rows="10" class="item-input"></textarea>
     <div class="done-o-meter"> <img src="" alt=""> <img src="" alt="">
       <div class="done-o-meter-bar"> </div>
     </div>
-    <div class="sublist">
-      <p>Add a sub-item</p>
-      <button class="btn btn-add-new">+</button>
+    <div class="new-sublist">
+      <!-- <p>Add a sub-item</p> -->
+      <div class="btn btn-add-sub">+ Add a sub-item</div>
     </div>
     <button>Add Another Item</button>
     <button>Save</button>
   </div>
 </div>
-<div id="wordcloud" class="overlay">
-  <div class="btn btn-default btn-close" onclick="hideWordcloudView(this);" >x</div>
-  <div id="wordcloud-inner">
+<div id="wordcloud" class="overlay" onclick="hideView(this);">
+  <div class="overlay-inner">
+    <div class="btn btn-default btn-close" onclick="hideView(this.parentNode.parentNode);" >x</div>
+    <div id="wordcloud-inner"></div>
   </div>
 </div>
 </body>
