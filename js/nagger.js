@@ -112,19 +112,31 @@ function fadeTransparency(div, a, i) {
 }
 
 function showSublist(el) {
-	var sublist = el.getElementsByTagName("UL")[0];
+	var sublist = el.parentNode.getElementsByTagName("UL")[0]
+	var dropIcon = el.getElementsByTagName("SPAN")[0]
+	sublist.style.height = '60px'
+	dropIcon.style.transform = 'rotate(90deg)'
+	el.onclick = function() {hideSublist(this)}
+}
+
+function hideSublist(el) {
+	var sublist = el.parentNode.getElementsByTagName("UL")[0]
+	var dropIcon = el.getElementsByTagName("SPAN")[0]
+	sublist.style.height = '0px'
+	dropIcon.style.transform = 'rotate(0deg)'
+	el.onclick = function() {showSublist(this)}
 }
 
 function showTooltip(el) {
 	var div = el.children[1]
-	div.style.overflow = 'visible'
+	//div.style.overflow = 'visible'
 	div.style.height = '60px'
 	el.onclick = function() {hideTooltip(this)}
 }
 
 function hideTooltip(el) {
 	var div = el.children[1]
-	div.style.overflow = 'hidden'
+	//div.style.overflow = 'hidden'
 	div.style.height = '0px'
 	el.onclick = function() {showTooltip(this)}
 }

@@ -93,45 +93,70 @@ input {
 }
 
 .item-list > li {
-	padding: 10px;
+	float: left;
+	width: 100%;
 }
 
 .item-list > li:nth-child(2n) {
 	background: #B3FCFC;
 }
 
+.item-face, .item-text, .item-action {
+	padding: 10px;
+}
+
+.item-face {
+	float: left;
+}
+.item-text {
+	float: left;
+}
+
 .item-action {
 	float: right;
 	cursor: pointer;
+	width: 10%;
 }
 
 .item-action > div {
 	height: 0;
 	overflow: hidden;
+	position: absolute;
+	right: 40px;
+	width: -moz-fit-content;
+	width: -webkit-fit-content;
 	-webkit-transition: height 0.5s;
 	transition: height 0.5s;
 }
 
-.item-action > div > div {
+.item-action > div ul {
 	background: none repeat scroll 0 0 #FFFFFF;
-    border: 1px solid #8B0000;
+    border: 1px solid darkgrey;
     border-radius: 5px 0 5px 5px;
-    overflow: hidden;
-    padding: 5px 10px;
-    position: relative;
-    right: 50px;
 }
 
 .item-action > div ul li {
-	margin: 5px 0;
+	padding : 5px 10px;
+
+}
+
+.item-action > div ul li:hover {
+	background: lightgrey;
 }
 
 .sublist {
+	cursor: pointer;
+}
+
+.sublist ul {
 	height: 0;
 	overflow: hidden;
+	background: #8fc9c9;
+	position: relative;
+	top: 36px;
+	right: 178px;
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
 	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
-	background: #8fc9c9;
 	-webkit-transition: height 0.5s;
 	transition: height 0.5s;
 }
@@ -139,6 +164,12 @@ input {
 .sublist li {
 	list-style: circle;
 	margin-left: 25px;
+}
+
+.icon-dropdown {
+	transition: rotate 0.5s;
+	display: inline-block;
+	margin-left: 10px;
 }
 
 .new-sublist {
