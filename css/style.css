@@ -148,7 +148,7 @@ input {
 	cursor: pointer;
 }
 
-.sublist ul {
+.sublist > ul {
 	height: 0;
 	overflow: hidden;
 	background: #8fc9c9;
@@ -161,7 +161,7 @@ input {
 	transition: height 0.5s;
 }
 
-.sublist li {
+.sublist > li {
 	list-style: circle;
 	margin-left: 25px;
 }

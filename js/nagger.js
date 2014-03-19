@@ -107,14 +107,14 @@ function hideView(el) {
 	el.style.left = '100%'
 }
 
-function fadeTransparency(div, a, i) {
+function fadeTransparency(div, a, i) {  // TODO: this peice is not working
 	div.style.background = 'rgba(100,100,100,' + a + ')'
 }
 
-function showSublist(el) {
+function showSublist(el) {  // TODO: having a problem with the tooltip if it has a sublist
 	var sublist = el.parentNode.getElementsByTagName("UL")[0]
 	var dropIcon = el.getElementsByTagName("SPAN")[0]
-	sublist.style.height = '60px'
+	sublist.style.height = '60px'  // TODO: this needs to be dynamic
 	dropIcon.style.transform = 'rotate(90deg)'
 	el.onclick = function() {hideSublist(this)}
 }
@@ -163,7 +163,7 @@ function buildWordArray (wordList) {
 	}
 
 	for (key in objArr) {
-		objArr[key].size = objArr[key].size * objArr[key].count // ideally size should be dependent on viewport
+		objArr[key].size = objArr[key].size * objArr[key].count // TODO: ideally size should be dependent on viewport
 	}
 
 	return objArr
