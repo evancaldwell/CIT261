@@ -10,7 +10,9 @@ function talkToServer(url) {
 		request.onreadystatechange = function() {
 			if (request.readyState == 4 && request.status == 200) {
 				var responseString = request.responseText
-				var responseData = JSON.parse(responseString)
+				if (responseString) {
+					var responseData = JSON.parse(responseString)
+				}
 				callBackFunction(responseData)
 			}
 		}
