@@ -104,7 +104,9 @@ function showLoginView() {
 }
 
 function hideView(el) {
-	el.style.left = '100%'
+	if (el != $('overlay-inner')) {
+		el.style.left = '100%'
+	}
 }
 
 function fadeTransparency(div, a, i) {  // TODO: this peice is not working
