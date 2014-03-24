@@ -23,8 +23,10 @@ function allDone(theDataWeGotBack) {
 
 //A function for setting up the page oncreate
 function setup() {
-	var loginCookie = true
-	if (loginCookie == false) {
+	var loginCookie = readCookie('NAGSESSION')
+	showCookie()
+	loginCookie = null
+	if (!loginCookie) {
 		showLoginView()
 	}
 	var newItemBtn = $('add-item-btn');
@@ -93,7 +95,7 @@ function showNewItemView(el) {
 function showLoginView() {
 	var viewWidth = $('container').offsetWidth
 	var viewHeight = $('container').offsetHeight
-	var div = $('login')
+	var div = $('auth')
 	var wordcloud = $('wordcloud')
 	var newItemView = $('new-item')
 	var signup = $('signup')
@@ -103,6 +105,28 @@ function showLoginView() {
 	hideView(wordcloud)
 	hideView(newItemView)
 	hideView(signup)
+}
+
+function showRegisterView(el) {
+	var pass2Input = $('pass2')
+	var btn = $('login-btn')
+	pass2Input.style.height = 'auto'
+	pass2Input.style.border = '1px solid #587C7C'
+	pass2Input.style.padding = '2px'
+	btn.innerHTML = 'Register'
+	el.innerHTML = 'Back to login'
+	el.onclick = function() {backToLoginView(this)}
+}
+
+function backToLoginView(el) {
+	var pass2Input = $('pass2')
+	var btn = $('login-btn')
+	pass2Input.style.height = '0'
+	pass2Input.style.border = '0'
+	pass2Input.style.padding = '0'
+	btn.innerHTML = 'Login'
+	el.innerHTML = "Don't have an account? Register here."
+	el.onclick = function() {showRegisterView(this)}
 }
 
 function hideView(el) {

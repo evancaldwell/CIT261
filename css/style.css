@@ -108,8 +108,9 @@ input {
 .item-face {
 	float: left;
 }
-.item-text {
+.item-text {  /* TODO: how do we set the size of these items? */
 	float: left;
+	text-overflow:ellipsis;
 }
 
 .item-action {
@@ -202,7 +203,7 @@ input {
 	box-sizing: border-box;
 	-webkit-transition:left 0.5s; /* For Safari 3.1 to 6.0 */
 	transition:left 0.5s;
-	cursor: pointer;
+	/*cursor: pointer;*/
 }
 
 .overlay-inner {
@@ -258,15 +259,9 @@ input {
 
 }
 
-.form-auth {
-	margin: 75px auto;
-	width: -moz-max-content;
-	width: -webkit-max-content; /* QUES: not sure if this works for webkit */
-}
-
 
 /* ----------- Login View ------------ */
-#login {
+#auth {
 	background: #8fc9c9; /* Old browsers */
 	background: -moz-radial-gradient(center, ellipse cover,  #8fc9c9 0%, #337c7c 100%); /* FF3.6+ */
 	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#8fc9c9), color-stop(100%,#337c7c)); /* Chrome,Safari4+ */
@@ -281,21 +276,28 @@ input {
 	z-index: 30;
 }
 
+.form-auth {
+	margin: 75px 45px;
+	/*width: -moz-max-content;
+	width: -webkit-max-content;*/ /* QUES: not sure if this works for webkit */
+}
+
+.form-auth > * {
+	width: -moz-available;
+}
+
 
 /* ----------- Signup View ------------ */
-#signup {
-	background: #8fc9c9; /* Old browsers */
-	background: -moz-radial-gradient(center, ellipse cover,  #8fc9c9 0%, #337c7c 100%); /* FF3.6+ */
-	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#8fc9c9), color-stop(100%,#337c7c)); /* Chrome,Safari4+ */
-	background: -webkit-radial-gradient(center, ellipse cover,  #8fc9c9 0%,#337c7c 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-radial-gradient(center, ellipse cover,  #8fc9c9 0%,#337c7c 100%); /* Opera 12+ */
-	background: -ms-radial-gradient(center, ellipse cover,  #8fc9c9 0%,#337c7c 100%); /* IE10+ */
-	background: radial-gradient(ellipse at center,  #8fc9c9 0%,#337c7c 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8fc9c9', endColorstr='#337c7c',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-	
-	position: absolute;
-	top: 0;
-	z-index: 40;
+#pass2 {  /* TODO: why is this not animating? */;
+	height: 0px;
+	padding: 0px;
+	border: none;
+	-webkit-transition:height 0.5s; /* For Safari 3.1 to 6.0 */
+	transition:height 0.5s;
+}
+
+#register-link {
+	cursor: pointer;
 }
 
 /* ----------- New Item View ------------ */

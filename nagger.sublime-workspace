@@ -239,7 +239,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 6112,
+				"buffer_size": 5527,
 				"line_ending": "Unix"
 			}
 		},
@@ -255,7 +255,7 @@
 			"file": "js/nagger.js",
 			"settings":
 			{
-				"buffer_size": 5195,
+				"buffer_size": 5228,
 				"line_ending": "Unix"
 			}
 		}
@@ -601,7 +601,7 @@
 	],
 	"find":
 	{
-		"height": 35.0
+		"height": 36.0
 	},
 	"find_in_files":
 	{
@@ -831,7 +831,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -840,15 +840,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6112,
+						"buffer_size": 5527,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5257,
-								5257
+								4531,
+								4531
 							]
 						],
 						"settings":
@@ -856,22 +856,6 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
 								"bh_double_quote",
 								"bh_double_quote_center",
 								"bh_double_quote_open",
@@ -880,22 +864,38 @@
 								"bh_unmatched_center",
 								"bh_unmatched_open",
 								"bh_unmatched_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
 								"bh_default_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
-								"bh_square_close"
+								"bh_square_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close"
 							],
 							"incomplete_sync": null,
 							"remote_loading": false,
@@ -906,10 +906,10 @@
 							"word_wrap": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 3025.0,
+						"translation.y": 2459.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -994,15 +994,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5195,
+						"buffer_size": 5228,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2789,
-								2789
+								5227,
+								5227
 							]
 						],
 						"settings":
@@ -1058,10 +1058,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1659.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -1069,7 +1069,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 27.0
+		"height": 28.0
 	},
 	"input":
 	{
@@ -1113,7 +1113,7 @@
 	"project": "nagger.sublime-project",
 	"replace":
 	{
-		"height": 50.0
+		"height": 52.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1139,7 +1139,7 @@
 		[
 			[
 				"",
-				"C:\\Users\\evan\\Dropbox\\Projects\\cs313.sublime-project"
+				"C:\\Users\\evan\\Google Drive\\School\\CIT225\\CIT225.sublime-project"
 			],
 			[
 				"313",
