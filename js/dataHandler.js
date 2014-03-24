@@ -26,7 +26,7 @@ function logIt(theDataWeGotBack) {
 }
 
 function showCookie() {
-	console.log(readCookie('PHPSESSID'))
+	console.log(readCookie('NAGSESSION'))
 }
 
 function readCookie(name) {
