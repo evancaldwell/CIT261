@@ -23,7 +23,7 @@ function allDone(theDataWeGotBack) {
 
 //A function for setting up the page oncreate
 function setup() {
-	var loginCookie = true
+	var loginCookie = false
 	if (loginCookie == false) {
 		showLoginView()
 	}
