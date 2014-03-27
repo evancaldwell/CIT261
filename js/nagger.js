@@ -23,7 +23,7 @@ function allDone(theDataWeGotBack) {
 
 //A function for setting up the page oncreate
 function setup() {
-	var loginCookie = false
+	var loginCookie = true
 	if (loginCookie == false) {
 		showLoginView()
 	}
@@ -149,12 +149,15 @@ function hideTooltip(el) {
 
 // =========== Playing with the word cloud ================
 function buildWordArray (wordList) {
+	wordList = getTagCloud();
+
 	wordList = ['family', 'family', 'family', 'work', 'family', 'work', 'school', 'work', 
 				'family', 'school', 'CIT', 'shopping', 'eat', 'shopping', 'cake', 'kids', 
-				'PTA', 'kids', 'groceries', 'groceries', 'kids'];
-	var objArr = [], prev, j = 0;
+				'PTA', 'kids', 'groceries', 'groceries', 'kids']
 
-	wordList = wordList.sort();
+	var objArr = [], prev, j = 0
+
+	wordList = wordList.sort()
 
 	for (var i=0; i<wordList.length; i++) {
 		if (wordList[i] !== prev) {

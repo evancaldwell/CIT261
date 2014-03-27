@@ -9,6 +9,7 @@
   <link href="css/style.css" rel="stylesheet">
   <script type="text/javascript" src="js/server.js"></script>
   <script type="text/javascript" src="js/nagger.js"></script>
+  <script type="text/javascript" src="js/dataHandler.js"></script>
 </head>
 <body onload="setup();">
 <div id="container">
@@ -133,11 +134,11 @@
     </div>
   </div>
   <div class="form form-auth">
-    <input type="email" placeholder="Email" required>
+    <input id="login-email" type="email" placeholder="Email" required>
     <br>
-    <input type="password" placeholder="Password" required>
+    <input id="login-pass" type="password" placeholder="Password" required>
     <br>
-    <button class="btn btn-default">Login</button>
+    <button class="btn btn-default" onclick="signUserIn()">Login</button>
   </div>
 </div>
 <div id="signup" class="overlay">

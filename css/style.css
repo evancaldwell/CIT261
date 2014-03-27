@@ -207,6 +207,7 @@ input {
 
 .overlay-inner {
 	margin: 45px 0 45px 45px;
+	padding: 5px;
 	background: white;
 }
 
