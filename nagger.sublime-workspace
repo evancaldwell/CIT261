@@ -3,234 +3,6 @@
 	{
 		"selected_items":
 		[
-			[
-				"getEle",
-				"getElementsByTagName"
-			],
-			[
-				"hide",
-				"hideNewItemView"
-			],
-			[
-				"new",
-				"new-item"
-			],
-			[
-				"build",
-				"buildWordArray"
-			],
-			[
-				"el",
-				"el"
-			],
-			[
-				"web",
-				"webkit-available"
-			],
-			[
-				"mar",
-				"margin-bottom"
-			],
-			[
-				"margin",
-				"margin-bottom"
-			],
-			[
-				"wid",
-				"width"
-			],
-			[
-				"marg",
-				"margin"
-			],
-			[
-				"int",
-				"INT"
-			],
-			[
-				"UTC",
-				"UTC_DATE"
-			],
-			[
-				"tru",
-				"TRUNC"
-			],
-			[
-				"common",
-				"common_lookup"
-			],
-			[
-				"rental",
-				"rental_item_price"
-			],
-			[
-				"alter",
-				"ALTER"
-			],
-			[
-				"W",
-				"WHERE"
-			],
-			[
-				"Sel",
-				"SELECT"
-			],
-			[
-				"comm",
-				"common_lookup_type"
-			],
-			[
-				"from",
-				"FROM"
-			],
-			[
-				"Movie",
-				"Movie1"
-			],
-			[
-				"fro",
-				"FROM"
-			],
-			[
-				"pric",
-				"price_fk3"
-			],
-			[
-				"Pric",
-				"PRICE"
-			],
-			[
-				"constraint",
-				"CONSTRAINT"
-			],
-			[
-				"Da",
-				"DATE"
-			],
-			[
-				"home",
-				"HOME"
-			],
-			[
-				"teley",
-				"TELEPHONE_TYPE"
-			],
-			[
-				"tele",
-				"TELEPHONE"
-			],
-			[
-				"add",
-				"ADDRESS_TYPE"
-			],
-			[
-				"and",
-				"AND"
-			],
-			[
-				"cmmon_loo",
-				"common_lookup"
-			],
-			[
-				"common_loo",
-				"common_lookup_nn21"
-			],
-			[
-				"com",
-				"common_lookup"
-			],
-			[
-				"c",
-				"c"
-			],
-			[
-				"create",
-				"create_oracle_store"
-			],
-			[
-				"FROM",
-				"FROM"
-			],
-			[
-				"docum",
-				"document_s"
-			],
-			[
-				"num",
-				"NUMBER"
-			],
-			[
-				"get",
-				"getElementById"
-			],
-			[
-				"ba",
-				"background-position"
-			],
-			[
-				"bak",
-				"background-image"
-			],
-			[
-				"back",
-				"background"
-			],
-			[
-				"rej",
-				"rejectedGrid"
-			],
-			[
-				"app",
-				"approvedGrid"
-			],
-			[
-				"pendi",
-				"pendingGrid"
-			],
-			[
-				"aut",
-				"auth_user"
-			],
-			[
-				"clok",
-				"clockEntries"
-			],
-			[
-				"wor",
-				"work_date"
-			],
-			[
-				"requi",
-				"requires_login"
-			],
-			[
-				"time",
-				"timeclock"
-			],
-			[
-				"reve",
-				"reviewProjects"
-			],
-			[
-				"project",
-				"project_desc"
-			],
-			[
-				"projec",
-				"project_reviewed"
-			],
-			[
-				"siri",
-				"siri_projects"
-			],
-			[
-				"inlin",
-				"inline-block"
-			],
-			[
-				"border",
-				"border-box"
-			]
 		]
 	},
 	"buffers":
@@ -239,7 +11,15 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 6112,
+				"buffer_size": 6235,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/cygwin64/home/Evan Caldwell/.bash_profile",
+			"settings":
+			{
+				"buffer_size": 2036,
 				"line_ending": "Unix"
 			}
 		},
@@ -255,32 +35,52 @@
 			"file": "js/nagger.js",
 			"settings":
 			{
-				"buffer_size": 5195,
+				"buffer_size": 5256,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/dataHandler.js",
+			"settings":
+			{
+				"buffer_size": 1129,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/server.js",
+			"settings":
+			{
+				"buffer_size": 799,
 				"line_ending": "Unix"
 			}
 		}
 	],
-	"build_system": "Packages/Python/Python.sublime-build",
+	"build_system": "",
 	"command_palette":
 	{
-		"height": 104.0,
+		"height": 490.0,
 		"selected_items":
 		[
 			[
-				"ssphp",
-				"Set Syntax: PHP"
+				"sid",
+				"View: Toggle Side Bar"
 			],
 			[
-				"bhf",
-				"BracketHighlighter: Fold Bracket Content"
+				"preved",
+				"Emmet: Previous Edit Point"
 			],
 			[
-				"bhr",
-				"BracketHighlighter: Remove Brackets"
+				"pref ke",
+				"Preferences: Key Bindings - Default"
 			],
 			[
-				"brack",
-				"BracketHighlighter: Fold Bracket Content"
+				"user",
+				"Preferences: Key Bindings - User"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
 			],
 			[
 				"instal",
@@ -289,174 +89,16 @@
 			[
 				"install",
 				"Package Control: Install Package"
-			],
-			[
-				"uper",
-				"Convert Case: Upper Case"
-			],
-			[
-				"uppr",
-				"Convert Case: Upper Case"
-			],
-			[
-				"upper",
-				"Convert Case: Upper Case"
-			],
-			[
-				"ccu",
-				"Convert Case: Upper Case"
-			],
-			[
-				"ccl",
-				"Convert Case: Lower Case"
-			],
-			[
-				"filed",
-				"FileDiffs: Menu"
-			],
-			[
-				"sspl",
-				"Set Syntax: Plain Text"
-			],
-			[
-				"sssq",
-				"Set Syntax: SQL"
-			],
-			[
-				"sssql",
-				"Set Syntax: SQL"
-			],
-			[
-				"sscss",
-				"Set Syntax: CSS"
-			],
-			[
-				"sshm",
-				"Set Syntax: HTML"
-			],
-			[
-				"side",
-				"View: Toggle Side Bar"
-			],
-			[
-				"sid",
-				"View: Toggle Side Bar"
-			],
-			[
-				"sfb",
-				"SFTP: Browse Server…"
-			],
-			[
-				"sftp:s",
-				"SFTP: Setup Server…"
-			],
-			[
-				"ssja",
-				"Set Syntax: JavaScript"
-			],
-			[
-				"proje",
-				"Project: Close"
-			],
-			[
-				"sideb",
-				"View: Toggle Side Bar"
-			],
-			[
-				"sftb",
-				"SFTP: Browse Server…"
-			],
-			[
-				"sfts",
-				"SFTP: Setup Server…"
-			],
-			[
-				"sfte",
-				"SFTP: Edit Server…"
-			],
-			[
-				"sft",
-				"SFTP: Edit Server…"
-			],
-			[
-				"proj",
-				"Project: Add Folder"
-			],
-			[
-				"poj",
-				"Project: Save As"
-			],
-			[
-				"sftm",
-				"SFTP: Edit Remote Mapping…"
-			],
-			[
-				"sf",
-				"SFTP: Edit Server…"
-			],
-			[
-				"sftobs",
-				"SFTP: Browse Server…"
-			],
-			[
-				"toggle side",
-				"View: Toggle Open Files in Side Bar"
-			],
-			[
-				"open files",
-				"View: Toggle Open Files in Side Bar"
-			],
-			[
-				"sftpb",
-				"SFTP: Browse Server…"
-			],
-			[
-				"key",
-				"Preferences: Key Bindings - Default"
-			],
-			[
-				"",
-				"Emmet: Decrement Number by 0.1"
-			],
-			[
-				"ssjson",
-				"Set Syntax: JSON"
-			],
-			[
-				"sftp",
-				"Set Syntax: SFTP Output Panel"
-			],
-			[
-				"ssjso",
-				"Set Syntax: JSON"
-			],
-			[
-				"sftpsh",
-				"SFTP: Show Panel"
-			],
-			[
-				"sft b",
-				"SFTP: Browse Server…"
-			],
-			[
-				"ssh",
-				"Set Syntax: HTML"
-			],
-			[
-				"sspy",
-				"Set Syntax: Python"
 			]
 		],
-		"width": 464.0
+		"width": 637.0
 	},
 	"console":
 	{
-		"height": 146.0,
+		"height": 144.0,
 		"history":
 		[
-			"package control",
-			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())",
-			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read()) "
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
 		]
 	},
 	"distraction_free":
@@ -470,142 +112,21 @@
 	},
 	"file_history":
 	[
-		"/C/Users/evan/Google Drive/School/COMM 130/website/P7 Web Page final.html",
-		"/C/Users/evan/Google Drive/School/COMM 130/website/style.css",
-		"/C/xampp/htdocs/cit261/css/style.css",
-		"/C/xampp/htdocs/cit261/index.html",
-		"/C/Users/evan/Google Drive/School/COMM 130/website/P7 Web Page Draft A Example.html.html",
-		"/C/xampp/htdocs/index - Copy.php",
-		"/C/xampp/htdocs/cit261/index.php",
-		"/C/Users/evan/Google Drive/School/COMM 130/website/P7Draft.html",
-		"/C/Users/evan/Light Table/LightTable/core/css/themes/eclipse.css",
-		"/C/tmp/kingdom_import.csv",
-		"/C/tmp/character.csv",
-		"/C/xampp/htdocs/cit261/css/desktop.ini",
-		"/C/xampp/htdocs/cs261/index.php",
-		"/C/xampp/htdocs/cs261/css/style.css",
-		"/C/Users/evan/Google Drive/School/CIT225/from class 2-5.sql",
-		"/C/Users/evan/Google Drive/School/CIT225/oracle_lab6.log",
-		"/C/Users/evan/Google Drive/School/CIT225/lib/create_oracle_store.sql",
-		"/C/Users/evan/Google Drive/School/CIT225/lab6/gabe-oracle_la6b6.sql",
-		"/C/Users/evan/Google Drive/School/CIT225/from class 2-10.sql",
-		"/C/Users/evan/Google Drive/School/CIT225/from class 2-19.sql",
-		"/C/Users/evan/Google Drive/School/CIT225/lib/seed_oracle_store.sql",
-		"/C/Users/evan/Google Drive/School/CIT225/seed_oracle_store.log",
-		"/C/Users/evan/Google Drive/School/CIT225/create_oracle_store.log",
-		"/C/Users/evan/Google Drive/School/CIT225/oracle_lab5.log",
-		"/C/Users/evan/Google Drive/School/CIT225/lab5/oracle_lab5.sql",
-		"/C/Users/evan/Google Drive/School/CIT225/lab6/oracle_lab6.log",
-		"/C/Users/evan/Google Drive/School/CIT225/mysql_lab6.txt",
-		"/C/Users/evan/Google Drive/School/CIT225/lab5/apply_mysql_lab5.sql",
-		"/C/Users/evan/Google Drive/School/CIT225/lab6/mysql_lab6.sql",
-		"/C/Users/evan/Google Drive/School/CIT225/lib/create_oracle_store.log",
-		"/C/Users/evan/Google Drive/School/CIT225/lib/seed_mysql_store_ri2.sql",
-		"/C/Users/evan/Google Drive/School/CIT225/lib/create_mysql_store_ri2.sql",
-		"/C/Users/evan/Google Drive/School/CIT225/lab5/apply_mysql_lab5.txt",
-		"/C/Users/evan/Google Drive/School/CIT225/create_mysql_store.txt",
-		"/C/Users/evan/Google Drive/School/CIT225/lab4/seed_mysql_store_ri_lab.sql",
-		"/C/Users/evan/Google Drive/School/CIT225/lab2/create_mysql_store_ri_lab.sql",
-		"/C/Users/evan/Google Drive/School/CIT225/lib/seed_mysql_store_ri.sql",
-		"/C/Users/evan/AppData/Roaming/Sublime Text 3/Packages/User/SFTP.errors.log",
-		"/C/Users/evan/Google Drive/School/CIT225/lib/create_mysql_store_ri.sql",
-		"/C/Users/evan/Google Drive/School/CIT225/lab4/seed_mysql_store_lab.txt",
-		"/C/Users/evan/Google Drive/School/CIT225/lab2/create_mysql_store_lab.txt",
-		"/C/Users/evan/Google Drive/School/CIT225/connect_errno",
-		"/C/Users/evan/Google Drive/School/CIT225/seed_mysql_store.txt",
-		"/C/Users/evan/Google Drive/School/CIT225/create_mysql_store_ri.sql",
-		"/C/Users/evan/Google Drive/School/CIT225/lab2/create_mysql_store_ri_lab_bad1.sql",
-		"/C/Users/evan/Google Drive/School/CIT225/create_mysql_store_ri_lab.sql",
-		"/C/Users/evan/Google Drive/School/CIT225/lab4/oracle_lab4.sql",
-		"/C/Users/evan/Google Drive/School/CIT225/seed_mysql_store_ri.sql",
-		"/C/Users/evan/Google Drive/School/CIT 225/lib/create_mysql_store_ri.sql",
-		"/C/Users/evan/Google Drive/School/CIT 225/lib/seed_mysql_store_ri.sql",
-		"/C/Users/evan/Google Drive/School/CIT 225/lab4/seed_oracle_store_lab.sql",
-		"/C/Users/evan/Google Drive/School/CIT 225/lib/seed_oracle_store.sql",
-		"/C/Users/evan/Google Drive/School/CIT 225/create_oracle_store_lab.sql",
-		"/C/Users/evan/Google Drive/School/CIT 225/seed_mysql_store.txt",
-		"/C/Users/evan/Google Drive/School/CIT 225/tst_xm2.sql",
-		"/C/Users/evan/Google Drive/School/CIT 225/lab4/signature-oracle.sql",
-		"/C/Users/evan/Google Drive/School/CIT 225/create_mysql_store_ri.sql",
-		"/C/Users/evan/Desktop/ftw-wp-content/new.ftw-bk/wp-config.php",
-		"/C/Users/evan/Desktop/ftw-wp-content/wp-config.php",
-		"/C/Users/evan/Google Drive/School/CIT 225/create_oracle_store.sql",
-		"/C/xampp/htdocs/conn/connAdmin.php",
-		"/C/xampp/htdocs/library/library.php",
-		"/C/Users/evan/Google Drive/School/CS313/App/modules/menu-bar.php",
-		"/C/Users/evan/Google Drive/School/CS313/App/style.css",
-		"/C/Users/evan/Google Drive/School/CS313/App/conn/connAdmin.php",
-		"/C/Users/evan/Google Drive/School/CS313/App/modules/head.php",
-		"/C/Users/evan/Google Drive/School/CS313/App/index.php",
-		"/C/Users/evan/Google Drive/School/CS313/App/app_home.html",
-		"/C/xampp/htdocs/index.php",
-		"/C/Users/evan/web2py/applications/mqr/modules/__init__.py",
-		"/C/Users/evan/web2py/applications/mqr/views/default/group_details.html",
-		"/C/Users/evan/web2py/applications/mqr/views/cms/comments_admin_dash.html",
-		"/C/Users/evan/web2py/applications/mqr/views/cms/comments_manage.html",
-		"/C/Users/evan/web2py/applications/mqr/views/default/comments_dash.html",
-		"/C/Users/evan/web2py/applications/mqr/views/default/view_groups.html",
-		"/C/users/evan/appdata/local/temp/sublime-sftp-browse-1384983871/siri_pa/home/SIRI/web2py/applications/mqr/static/css/geo-style.css",
-		"/C/users/evan/appdata/local/temp/sublime-sftp-browse-1384984172/siri_pa/home/SIRI/web2py/applications/mqr/controllers/default.py",
-		"/C/users/evan/appdata/local/temp/sublime-sftp-browse-1384982809/siri_pa/home/SIRI/web2py/applications/mqr/views/default/veiw_displays.html",
-		"/C/users/evan/appdata/local/temp/sublime-sftp-browse-1384984102/siri_pa/home/SIRI/web2py/applications/mqr/views/default/exhibit_details.html",
-		"/C/users/evan/appdata/local/temp/sublime-sftp-browse-1384982783/siri_pa/home/SIRI/web2py/applications/mqr/views/default/view_exhibits.html",
-		"/C/users/evan/appdata/local/temp/sublime-sftp-browse-1384982844/siri_pa/home/SIRI/web2py/applications/mqr/views/default/group_details.html",
-		"/C/users/evan/appdata/local/temp/sublime-sftp-browse-1384982709/siri_pa/home/SIRI/web2py/applications/mqr/views/default/view_groups.html",
-		"/C/Users/evan/web2py/applications/mqr/views/layout.html",
-		"/C/Users/evan/web2py/applications/mqr/controllers/admin.py",
-		"/C/Users/evan/web2py/applications/mqr/models/db.py",
-		"/C/users/evan/appdata/local/temp/sublime-sftp-browse-1383980812/siri_pa/home/SIRI/web2py/applications/siri_admin/views/timeclock/displaytime.html",
-		"/C/users/evan/appdata/local/temp/sublime-sftp-browse-1383980840/siri_pa/home/SIRI/web2py/applications/siri_admin/views/timeclock/employeedash.html",
-		"/C/users/evan/appdata/local/temp/sublime-sftp-browse-1383982346/siri_pa/home/SIRI/web2py/applications/siri_admin/views/timeclock/gspreadtest.html",
-		"/C/users/evan/appdata/local/temp/sublime-sftp-browse-1384405489/siri_pa/home/SIRI/web2py/applications/siri_admin/views/timeclock/processinvoices.html",
-		"/C/users/evan/appdata/local/temp/sublime-sftp-browse-1383980787/siri_pa/home/SIRI/web2py/applications/siri_admin/controllers/timeclock.py",
-		"/C/users/evan/appdata/local/temp/sublime-sftp-browse-1383980592/siri_pa/home/SIRI/web2py/applications/siri_admin/models/db.py",
-		"/C/users/evan/appdata/local/temp/sublime-sftp-browse-1384121644/siri_pa/home/SIRI/web2py/applications/mqr/controllers/default.py",
-		"/C/users/evan/appdata/local/temp/sublime-sftp-browse-1383982302/siri_pa/home/SIRI/web2py/applications/siri_admin/views/default/gspreadtest.html",
-		"/C/users/evan/appdata/local/temp/sublime-sftp-browse-1383807910/siri_pa/home/SIRI/web2py/applications/siri_admin/views/timeclock/displaytime.html",
-		"/C/users/evan/appdata/local/temp/sublime-sftp-browse-1383807923/siri_pa/home/SIRI/web2py/applications/siri_admin/controllers/timeclock.py",
-		"/C/users/evan/appdata/local/temp/sublime-sftp-browse-1383808035/siri_pa/home/SIRI/web2py/applications/siri_admin/models/db.py",
-		"/C/users/evan/appdata/local/temp/sublime-sftp-browse-1383807800/siri_pa/home/SIRI/web2py/applications/siri_admin/views/timeclock/employeedash.html",
-		"/C/users/evan/appdata/local/temp/sublime-sftp-browse-1382499022/siri_pa/home/SIRI/web2py/applications/siri_admin/views/default/manageprojects_alt.html",
-		"/C/users/evan/appdata/local/temp/sublime-sftp-browse-1382502099/siri_pa/home/SIRI/web2py/applications/siri_admin/views/timeclock/addtime.html",
-		"/C/users/evan/appdata/local/temp/sublime-sftp-browse-1383394297/siri_pa/home/SIRI/web2py/applications/siri_admin/views/timeclock/employeedash.html",
-		"/C/users/evan/appdata/local/temp/sublime-sftp-browse-1382485048/siri_pa/home/SIRI/web2py/applications/siri_admin/views/default/mainpage.html",
-		"/C/users/evan/appdata/local/temp/sublime-sftp-browse-1382502127/siri_pa/home/SIRI/web2py/applications/siri_admin/views/timeclock/displaytime.html",
-		"/C/users/evan/appdata/local/temp/sublime-sftp-browse-1382501000/siri_pa/home/SIRI/web2py/applications/siri_admin/controllers/timeclock.py",
-		"/C/users/evan/appdata/local/temp/sublime-sftp-browse-1382479655/siri_pa/home/SIRI/web2py/applications/siri_admin/controllers/default.py",
-		"/C/users/evan/appdata/local/temp/sublime-sftp-browse-1382480376/siri_pa/home/SIRI/web2py/applications/siri_admin/models/db.py",
-		"/C/users/evan/appdata/local/temp/sublime-sftp-browse-1382493376/siri_pa/home/SIRI/web2py/applications/siri_admin/static/css/web2py.css",
-		"/C/users/evan/appdata/local/temp/sublime-sftp-browse-1382493314/siri_pa/home/SIRI/web2py/applications/siri_admin/static/css/web2py_bootstrap.css",
-		"/C/users/evan/appdata/local/temp/sublime-sftp-browse-1382480239/siri_pa/home/SIRI/web2py/applications/siri_admin/views/default/employeedash.html",
-		"/C/users/evan/appdata/local/temp/sublime-sftp-browse-1382479723/siri_pa/home/SIRI/web2py/applications/siri_admin/views/default/displaytime.html",
-		"/C/users/evan/appdata/local/temp/sublime-sftp-browse-1382482637/siri_pa/home/SIRI/web2py/applications/siri_admin/views/default/addtime.html",
-		"/C/users/evan/appdata/local/temp/sublime-sftp-browse-1382498352/siri_pa/home/SIRI/web2py/applications/siri_admin/views/default/manageprojects.html",
-		"/C/users/evan/appdata/local/temp/sublime-sftp-browse-1382480595/siri_pa/home/SIRI/web2py/applications/siri_admin/views/default/manageprojects.html",
-		"/C/users/evan/appdata/local/temp/sublime-sftp-browse-1382497640/siri_pa/home/SIRI/web2py/applications/siri_admin/views/default/manageprojects2.html",
-		"/C/users/evan/appdata/local/temp/sublime-sftp-browse-1378871905/siri_pa/home/SIRI/web2py/applications/siri_admin/models/db.py",
-		"/C/users/evan/appdata/local/temp/sublime-sftp-browse-1381291615/siri_pa/home/SIRI/web2py/applications/siri_admin/static/css/web2py.css",
-		"/C/users/evan/appdata/local/temp/sublime-sftp-browse-1381291094/siri_pa/home/SIRI/web2py/applications/siri_admin/views/default/engagementor.html",
-		"/C/users/evan/appdata/local/temp/sublime-sftp-browse-1381291069/siri_pa/home/SIRI/web2py/applications/siri_admin/views/default/engagestudent.html",
-		"/C/users/evan/appdata/local/temp/sublime-sftp-browse-1381288822/siri_pa/home/SIRI/web2py/applications/siri_admin/views/default/engagepartner.html",
-		"/C/users/evan/appdata/local/temp/sublime-sftp-browse-1381286494/siri_pa/home/SIRI/web2py/applications/siri_admin/views/default/engage.html",
-		"/C/users/evan/appdata/local/temp/sublime-sftp-browse-1381288143/siri_pa/home/SIRI/web2py/applications/siri_admin/views/default/mainpage.html",
-		"/C/users/evan/appdata/local/temp/sublime-sftp-browse-1381282353/siri_pa/home/SIRI/web2py/applications/siri_admin/views/default/manageprojects.html",
-		"/C/users/evan/appdata/local/temp/sublime-sftp-browse-1380898955/siri_pa/home/SIRI/web2py/applications/siri_admin/views/default/displaytime.html",
-		"/C/users/evan/appdata/local/temp/sublime-sftp-browse-1378906198/siri_pa/home/SIRI/web2py/applications/siri_admin/controllers/default.py",
-		"/C/users/evan/appdata/local/temp/sublime-sftp-browse-1380898842/siri_pa/home/SIRI/web2py/applications/siri_admin/views/default/clockadmin.html",
-		"/C/users/evan/appdata/local/temp/sublime-sftp-browse-1381286338/siri_pa/home/SIRI/web2py/applications/siri_admin/views/default/engage",
-		"/C/users/evan/appdata/local/temp/sublime-sftp-browse-1381284642/siri_pa/home/SIRI/web2py/gluon/tools.py",
-		"/C/users/evan/appdata/local/temp/sublime-sftp-browse-1380898477/siri_pa/home/SIRI/web2py/applications/siri_admin/views/appadmin.html",
-		"/C/users/evan/appdata/local/temp/sublime-sftp-browse-1378871856/siri_pa/home/SIRI/web2py/applications/siri_admin/controllers/familysearch.py"
+		"/C/xampp/htdocs/CIT261/backend/nag.php",
+		"/C/xampp/htdocs/CIT261/backend/session.php",
+		"/C/Users/Evan Caldwell/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/Evan Caldwell/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/cygwin64/home/Evan Caldwell/.bash_profile",
+		"/C/cygwin64/usr/local/bin/sublime",
+		"/C/cygwin64/usr/local/bin/subl"
 	],
 	"find":
 	{
-		"height": 35.0
+		"height": 43.0
 	},
 	"find_in_files":
 	{
-		"height": 93.0,
+		"height": 0.0,
 		"where_history":
 		[
 		]
@@ -615,134 +136,6 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			".children[0]",
-			"button",
-			"right",
-			"console",
-			"out",
-			"0.5s",
-			"span",
-			"ease-in",
-			"linear",
-			"3s",
-			"2,2",
-			"rotate(30deg)",
-			"h2",
-			"relative",
-			";\n",
-			"input",
-			"required",
-			"input",
-			"Input",
-			"input",
-			"left",
-			"Page",
-			"<img",
-			"div",
-			"class=\"",
-			"'HOME'",
-			"release_date()",
-			"date()",
-			"i.item_release_date,UTC_DATE()",
-			"(DATE(UTC_DATE()) - DATE(i.item_release_date))",
-			"i.release_date",
-			"NVL",
-			"TRUNC",
-			"SYSDATE",
-			"set",
-			"not nul",
-			"error",
-			"AS VARCHAR(30)",
-			"add column",
-			"VARCHAR",
-			"fk_rental_item",
-			"SYSDATE",
-			"(SELECT max(common_lookup_id) + 1\n FROM  common_lookup)\n, ",
-			"common_lookup_id\n, ",
-			"SYSDATE",
-			"4.a",
-			"SYSDATE",
-			"CHAR",
-			"NOT NOLL",
-			"update",
-			"err",
-			"insert into rental",
-			"varchar",
-			"VARCHAR",
-			"ADD",
-			"varchar2",
-			"add",
-			"error",
-			"common_lookup_type = 'grou",
-			"error",
-			"-DAY RENTAL",
-			"as",
-			"union all",
-			"select",
-			"-- ",
-			"ERROR",
-			"alter table",
-			"set",
-			"--",
-			"common_lookup_Id",
-			"rental_item",
-			"add",
-			"foreign key",
-			"number",
-			"int ",
-			"erro",
-			"error",
-			"last_updated_date",
-			"last_update_date",
-			"ookup_table",
-			"luna",
-			"   17-FEB-14",
-			"3 1",
-			"3 ",
-			" 3",
-			"error",
-			"as statement",
-			"if exists",
-			"error",
-			"CREATE table price",
-			"source",
-			"_lab",
-			"error",
-			"check",
-			"error",
-			"SELECT",
-			"error",
-			"telephone",
-			"error",
-			"rental_lab",
-			"_lab_lab",
-			"error",
-			"1068_39",
-			"sql-1068_39",
-			"error",
-			"contact_lab_fk1",
-			"contact_fk1",
-			"member",
-			"member_lab",
-			"error",
-			"_fk",
-			"street_address(?!_)",
-			"system_user(?!_)",
-			"rental(?!_)",
-			"member(?!_)",
-			"item(?!_)",
-			"contact(?!_)",
-			"common_lookup(?!_)",
-			"address(?!_)",
-			"error",
-			"errir",
-			"CIT 225",
-			"current",
-			"error",
-			"MEMBER(?!_)",
-			"MEMBER",
-			"member(?!_)",
-			"current_r"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -750,77 +143,6 @@
 		"regex": false,
 		"replace_history":
 		[
-			"release_date",
-			"date",
-			"UTC_DATE(),i.item_release_date",
-			"-DAY-RENTAL",
-			"",
-			"-DAY-RENTAL",
-			"ALTER TABLE",
-			"telephone_lab",
-			"_lab",
-			"_lab_fk",
-			"system_user_lab",
-			"rental_lab",
-			"member_lab",
-			"item_lab",
-			"contact_lab",
-			"common_lookup_lab",
-			"address_lab",
-			"CIT225",
-			"memeber_lab",
-			"_",
-			"system_user",
-			"telephone_lab",
-			"rental_lab",
-			"member_lab",
-			"item_lab",
-			"common_lookup_lab",
-			"address_lab",
-			"system_user_lab",
-			" member_lab",
-			" member",
-			"MEMBER",
-			"contacts_lab",
-			"telephone_lab",
-			"system_user_lab",
-			"rental_item",
-			"rental_lab",
-			" member_lab",
-			"item_lab",
-			"contact_lab",
-			"common_lookup_lab",
-			"address_lab",
-			"COMMON_LOOKUP_LAB",
-			"address_lab",
-			"rental_lab",
-			"telephone_lab",
-			"system_user_lab",
-			"member_lab",
-			"item_lab",
-			"contact_lab",
-			"common_lookup_lab",
-			"address_lab",
-			"telephone_lab",
-			"system_user_lab",
-			"street_address_lab",
-			"rental_item_lab",
-			"rental_lab",
-			"item_lab",
-			"contact_lab",
-			"common_lookup_lab",
-			"address_lab",
-			"member_lab",
-			"item_lab",
-			"contact_lab",
-			"common_lookup_lab",
-			"address_lab",
-			"collection",
-			"fs_volunteers",
-			"space",
-			"r",
-			"vph",
-			"vpw"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -831,7 +153,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -840,15 +162,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6112,
+						"buffer_size": 6235,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5257,
-								5257
+								585,
+								585
 							]
 						],
 						"settings":
@@ -856,26 +178,26 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
 								"bh_curly",
 								"bh_curly_center",
 								"bh_curly_open",
 								"bh_curly_close",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
 								"bh_double_quote",
 								"bh_double_quote_center",
 								"bh_double_quote_open",
 								"bh_double_quote_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
@@ -884,29 +206,27 @@
 								"bh_round_center",
 								"bh_round_open",
 								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
 								"bh_default_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close"
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close"
 							],
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
+							"last_modified_indicator": true,
+							"last_modified_indicator_multiline": true,
 							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"tab_size": 2,
-							"translate_tabs_to_spaces": true,
-							"word_wrap": false
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 3025.0,
+						"translation.y": 2330.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -914,6 +234,80 @@
 				},
 				{
 					"buffer": 1,
+					"file": "/C/cygwin64/home/Evan Caldwell/.bash_profile",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2036,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1751,
+								1751
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close"
+							],
+							"last_modified_indicator": true,
+							"last_modified_indicator_multiline": true,
+							"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage"
+						},
+						"translation.x": -0.0,
+						"translation.y": 818.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
 					"file": "css/style.css",
 					"semi_transient": false,
 					"settings":
@@ -925,8 +319,8 @@
 						"selection":
 						[
 							[
-								2741,
-								2741
+								2042,
+								2042
 							]
 						],
 						"settings":
@@ -934,94 +328,6 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close"
-							],
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1028.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "js/nagger.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5195,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2789,
-								2789
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
@@ -1030,18 +336,10 @@
 								"bh_curly_center",
 								"bh_curly_open",
 								"bh_curly_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
@@ -1049,19 +347,262 @@
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
-								"bh_angle_close"
+								"bh_angle_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close"
 							],
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
+							"last_modified_indicator": true,
+							"last_modified_indicator_multiline": true,
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2195.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "js/nagger.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5256,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4025,
+								4025
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close"
+							],
+							"last_modified_indicator": true,
+							"last_modified_indicator_multiline": true,
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1659.0,
+						"translation.y": 2878.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "js/dataHandler.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1129,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								245,
+								245
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close"
+							],
+							"last_modified_indicator": true,
+							"last_modified_indicator_multiline": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "js/server.js",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 799,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close"
+							],
+							"last_modified_indicator": true,
+							"last_modified_indicator_multiline": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
 					"type": "text"
 				}
 			]
@@ -1069,11 +610,11 @@
 	],
 	"incremental_find":
 	{
-		"height": 27.0
+		"height": 28.0
 	},
 	"input":
 	{
-		"height": 39.0
+		"height": 0.0
 	},
 	"layout":
 	{
@@ -1098,22 +639,14 @@
 		]
 	},
 	"menu_visible": true,
-	"output.exec":
-	{
-		"height": 124.0
-	},
 	"output.find_results":
 	{
 		"height": 0.0
 	},
-	"output.sftp":
-	{
-		"height": 148.0
-	},
 	"project": "nagger.sublime-project",
 	"replace":
 	{
-		"height": 50.0
+		"height": 52.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1121,32 +654,16 @@
 		"height": 0.0,
 		"selected_items":
 		[
-			[
-				"group",
-				"views\\default\\group_details.html"
-			],
-			[
-				"view_grou",
-				"views\\default\\view_groups.html"
-			]
 		],
 		"width": 0.0
 	},
 	"select_project":
 	{
-		"height": 500.0,
+		"height": 625.0,
 		"selected_items":
 		[
-			[
-				"",
-				"C:\\Users\\evan\\Dropbox\\Projects\\cs313.sublime-project"
-			],
-			[
-				"313",
-				"C:\\Users\\evan\\Dropbox\\Projects\\cs313.sublime-project"
-			]
 		],
-		"width": 380.0
+		"width": 475.0
 	},
 	"select_symbol":
 	{
@@ -1160,10 +677,10 @@
 	{
 	},
 	"show_minimap": true,
-	"show_open_files": true,
+	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 224.0,
+	"side_bar_width": 188.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

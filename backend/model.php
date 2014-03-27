@@ -94,4 +94,100 @@ function mdl_getTagCloud($user_id) {
 		return '0';
 	}
 }
+function mdl_insertItem($newItemId, $user_id, $itemRate, $itemName, $date) {
+	global $db;
+	global $database;
+	$sql = "INSERT INTO item (item_id, user_id, rate_id, item_name, completed, date_created, rate_date)
+			VALUES (:newItemId, :user_id, :itemRate, :itemName, 'N', :date_created, :rate_date)";
+	try {
+		$stmt = $db->prepare($sql);
+		$stmt->bindValue(':newItemId', $newItemId);
+		$stmt->bindValue(':user_id', $user_id);
+		$stmt->bindValue(':itemRate', $itemRate);
+		$stmt->bindValue(':itemName', $itemName);
+		$stmt->bindValue(':date_created', $date);
+		$stmt->bindValue(':rate_date', $date);
+		$stmt->execute();
+		$stmt->closeCursor();
+	}
+	catch (PDOException $exc) {
+	}
+}
+function mdl_insertSubItem($newSubItemId, $user_id, $newItemId, $sub) {
+	global $db;
+	global $database;
+	$sql = "INSERT INTO subItem (sub_id, user_id, item_id, subItem, completed)
+			VALUES (:newSubItemId, :user_id, :newItemId, :sub, 'N')";
+	try {
+		$stmt = $db->prepare($sql);
+		$stmt->bindValue(':newSubItemId', $newSubItemId);
+		$stmt->bindValue(':user_id', $user_id);
+		$stmt->bindValue(':newItemId', $newItemId);
+		$stmt->bindValue(':sub', $sub);
+		$stmt->execute();
+		$stmt->closeCursor();
+	}
+	catch (PDOException $exc) {
+	}
+}
+function mdl_checkWord($word) {
+	global $db;
+	global $database;
+	$sql = "SELECT tag_id FROM tag WHERE tag = :word";
+	try {
+		$stmt = $db->prepare($sql);
+		$stmt->bindValue(':word', $word);
+		$stmt->execute();
+		$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+		$stmt->closeCursor();
+		return $result;
+	}
+	catch (PDOException $exc) {
+	}
+}
+function mdl_insertNewTag($newTagId, $tag) {
+	global $db;
+	global $database;
+	$sql = "INSERT INTO tag (tag_id, tag) VALUES (:newTagId, :tag)";
+	try {
+		$stmt = $db->prepare($sql);
+		$stmt->bindValue(':newTagId', $newTagId);
+		$stmt->bindValue(':tag', $tag);
+		$stmt->execute();
+		$stmt->closeCursor();
+	}
+	catch (PDOException $exc) {
+	}
+}
+function mdl_insertTagCount($newCountId, $user_id, $newTagId, $date) {
+	global $db;
+	global $database;
+	$sql = "INSERT INTO tagCount (count_id, user_id, tag_id, tag_count, last_updated)
+			VALUES (:count_id, :user_id, :tag_id, '1', :last_updated)";
+	try {
+		$stmt = $db->prepare($sql);
+		$stmt->bindValue(':count_id', $newCountId);
+		$stmt->bindValue(':user_id', $user_id);
+		$stmt->bindValue(':tag_id', $newTagId);
+		$stmt->bindValue(':last_updated', $date);
+		$stmt->execute();
+		$stmt->closeCursor();
+	}
+	catch (PDOException $exc) {
+	}
+}
+function mdl_updateTagCount($user_id, $newTagId) {
+	global $db;
+	global $database;
+	$sql = "UPDATE tagCount SET tag_count = tag_count + 1 WHERE user_id = :user_id AND tag_id = :tag_id";
+	try {
+		$stmt = $db->prepare($sql);
+		$stmt->bindValue(':user_id', $user_id);
+		$stmt->bindValue(':tag_id', $newTagId);
+		$stmt->execute();
+		$stmt->closeCursor();
+	}
+	catch (PDOException $exc) {
+	}
+}
 ?>

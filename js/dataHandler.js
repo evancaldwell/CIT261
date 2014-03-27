@@ -1,11 +1,12 @@
 //Data Handler Functions For Nag App
 
 //Initialize the ability to talk to the server
-var server = new talkToServer('/backend/nag.php')
+var server = new talkToServer('/cit261/backend/nag.php')
 
 function signUserIn() {
-	var username = 'Sarah'
-	var password = 'testing'
+	var username = $('login-email').value
+	var password = $('login-pass').value
+	console.log("username: " + username + " | password: " + password)
 	server.sendData('POST', 'signInUser', [{"username" : username , "password" : password}], logIt)
 }
 
@@ -19,6 +20,10 @@ function getSubitems(item_id) {
 
 function getTagCloud() {
 	server.sendData('POST', 'getTagCloud', '', logIt)
+}
+
+function insertNewItem() {
+	server.sendData('POST', 'insertItem', [{"name":"Christmas Shopping","rate":"5","subItems":["Kit Kats","Swedish Fish","Chips"]}], logIt)
 }
 
 function logIt(theDataWeGotBack) {
