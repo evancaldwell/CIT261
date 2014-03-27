@@ -163,27 +163,24 @@
     <button class="btn btn-default">Sign Up</button>
   </div>
 </div>
-<div id="new-item" class="overlay" onclick="hideView(this);">  <!-- TODO: This is applying the onclick to the overlay-inner div as well -->
-  <div class="overlay-inner">
-    <div class="btn btn-default btn-close" onclick="hideView(this.parentNode);" >x</div>
-    <h2>Add a new item</h2>
-    <textarea name="newItemInput" id="new-item-input" cols="30" rows="10" class="item-input"></textarea>
-    <div class="done-o-meter"> <img src="" alt=""> <img src="" alt="">
-      <div class="done-o-meter-bar"> </div>
-    </div>
-    <div class="new-sublist">
-      <!-- <p>Add a sub-item</p> -->
-      <div class="btn btn-add-sub">+ Add a sub-item</div>
-    </div>
-    <button>Add Another Item</button>
-    <button>Save</button>
+<div id="new-item" class="overlay">
+  <div class="btn btn-default btn-close" onclick="hideView(this.parentNode, true)">x</div>
+  <h2>Add a new item</h2>
+  <textarea name="newItemInput" id="new-item-input" cols="30" rows="10" class="item-input"></textarea>
+  <div class="done-o-meter"> <img src="" alt=""> <img src="" alt="">
+    <div class="done-o-meter-bar"> </div>
   </div>
-</div>
-<div id="wordcloud" class="overlay" onclick="hideView(this);">
-  <div class="overlay-inner">
-    <div class="btn btn-default btn-close" onclick="hideView(this.parentNode.parentNode);" >x</div>
-    <div id="wordcloud-inner"></div>
+  <div class="new-sublist">
+    <!-- <p>Add a sub-item</p> -->
+    <div class="btn btn-add-sub">+ Add a sub-item</div>
   </div>
+  <button>Add Another Item</button>
+  <button>Save</button>
 </div>
+<div id="wordcloud" class="overlay">
+  <div class="btn btn-default btn-close" onclick="hideView(this.parentNode, true);">x</div>
+  <div id="wordcloud-inner"></div>
+</div>
+<div id="transparency" onclick="hideView('all', true)"></div> <!-- this needs to pass in the view instead of itself -->
 </body>
 </html>

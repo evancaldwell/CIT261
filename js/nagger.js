@@ -51,43 +51,33 @@ function setup1() {
 
 // ============ page animation functions ============
 function showWordcloudView(el) {
-	var a = 0
 	var viewWidth = $('container').offsetWidth
 	var viewHeight = $('container').offsetHeight
 	var div = $('wordcloud')
 	var newItemView = $('new-item')
 	var login = $('login')
 	var signup = $('signup')
-	div.style.left = '0px'
-	div.children[0].style.height = viewHeight - 90 + 'px'
-	hideView(newItemView)
-	hideView(login)
-	hideView(signup)
-	for (i=0; i<6; i++) {
-		a += (i*0.05)
-		setTimeout(fadeTransparency(div, a, i), 1000)
-		
-	}
+	showTransparency()
+	div.style.left = '45px'
+	div.style.height = viewHeight - 90 + 'px'
+	div.style.width = viewWidth - 45 + 'px'
+	hideView(newItemView, false)
+	hideView(login, false)
 }
 
 function showNewItemView(el) {
-	var a = 0
 	var viewWidth = $('container').offsetWidth
 	var viewHeight = $('container').offsetHeight
 	var div = $('new-item')
 	var wordcloud = $('wordcloud')
 	var login = $('login')
 	var signup = $('signup')
-	div.style.left = '0px'
-	div.children[0].style.height = viewHeight - 90 + 'px'
-	hideView(wordcloud)
-	hideView(login)
-	hideView(signup)
-	for (i=0; i<6; i++) {
-		a += (i*0.05)
-		setTimeout(fadeTransparency(div, a, i), 1000)
-		
-	}
+	showTransparency()
+	div.style.left = '45px'
+	div.style.height = viewHeight - 90 + 'px'
+	div.style.width = viewWidth - 45 + 'px'
+	hideView(wordcloud, false)
+	hideView(login, false)
 }
 
 function showLoginView() {
@@ -100,19 +90,31 @@ function showLoginView() {
 	div.style.left = '0px'
 	div.style.height = viewHeight + 'px'
 	div.style.width = viewWidth + 'px'
-	hideView(wordcloud)
-	hideView(newItemView)
-	hideView(signup)
+	hideView(wordcloud, false)
+	hideView(newItemView, false)
 }
 
-function hideView(el) {
-	if (el != $('overlay-inner')) {
+function hideView(el, trans) {
+	if (el == "all") {
+		$('new-item').style.left = '100%'
+		$('wordcloud').style.left = '100%'
+	} else {
 		el.style.left = '100%'
+	}
+	if (trans) {
+		hideTransparency()
 	}
 }
 
-function fadeTransparency(div, a, i) {  // TODO: this peice is not working
-	div.style.background = 'rgba(100,100,100,' + a + ')'
+function showTransparency() {  // TODO: this peice is not working
+	var div = $('transparency')
+	// div.style.background = 'rgba(100,100,100,0.75)'
+	div.style.left = '0px'
+}
+
+function hideTransparency() {  // TODO: this peice is not working
+	var div = $('transparency')
+	div.style.left = '100%'
 }
 
 function showSublist(el) {  // TODO: having a problem with the tooltip if it has a sublist
