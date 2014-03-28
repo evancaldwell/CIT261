@@ -20,7 +20,6 @@ function allDone(theDataWeGotBack) {
 	console.log(theDataWeGotBack)
 }
 
-
 //A function for setting up the page oncreate
 function setup() {
 	var loginCookie = true
@@ -107,7 +106,7 @@ function showLoginView() {
 
 function hideView(el) {
 	if (el != $('overlay-inner')) {
-		//el.style.left = '100%'
+		el.style.left = '100%'
 	}
 }
 
