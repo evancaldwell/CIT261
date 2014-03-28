@@ -43,11 +43,12 @@
               <li><img class="btn-delete" src="img/buttons/DeleteB.svg" alt="delete"/></li>
             </ul>
           </div>   
-        </div>
+          </div>  
       </li>
       <li class="sublist"> 
         <div class="item-face"><img src="" alt=""></div>
         <div class="item-text has-sublist" onclick="showSublist(this);"><p class="dropdown">Finish CIT 261 project<span class="icon-dropdown">></span><img class="btn-dropdown" src="img/buttons/UpArrow.svg" alt="^"></p></div>
+        <div class="item-text has-sublist" onclick="showSublist(this);"><p class="dropdown">Finish CIT 261 project<span class="icon-dropdown">></span></p></div>
         <ul>
           <li>final design</li>
           <li>HTML/CSS</li>
@@ -61,6 +62,7 @@
               <li><img class="btn-delete" src="img/buttons/DeleteB.svg" alt="delete"/></li>
             </ul>
           </div>   
+          </div>
       </li>
       <li>
         <div class="item-face"><img src="" alt=""></div>
@@ -73,7 +75,7 @@
               <li><img class="btn-delete" src="img/buttons/DeleteB.svg" alt="delete"/></li>
             </ul>
           </div>   
-        </div>
+          </div>  
       </li>
       <li>
         <div class="item-face"><img src="" alt=""></div>
@@ -86,7 +88,7 @@
               <li><img class="btn-delete" src="img/buttons/DeleteB.svg" alt="delete"/></li>
             </ul>
           </div>   
-        </div>
+          </div>  
       </li>
       <li>
         <div class="item-face"><img src="" alt=""></div>
@@ -99,7 +101,7 @@
               <li><img class="btn-delete" src="img/buttons/DeleteB.svg" alt="delete"/></li>
             </ul>
           </div>   
-        </div>
+          </div>  
       </li>
       <li>
         <div class="item-face"><img src="" alt=""></div>
@@ -111,7 +113,7 @@
               <li><img class="btn-edit" src="img/buttons/EditB.svg" alt="edit"/></li>
               <li><img class="btn-delete" src="img/buttons/DeleteB.svg" alt="delete"/></li>
             </ul>
-          </div>   
+          </div>
         </div>
       </li>
     </ul>
@@ -123,7 +125,7 @@
     <div id="wordcloud-btn" class="btn-cloud" onclick="buildWordCloud(this, showWordcloudView);">
       <img class="cloud-icon" src="img/buttons/Cloud.svg" alt="cloud">
     </div>
-  </div>
+    </div>
 
 <!-- ============= Hidden divs ============= -->
 <div id="login" class="overlay">
@@ -133,11 +135,11 @@
     </div>
   </div>
   <div class="form form-auth">
-    <input type="email" placeholder="Email" required>
+    <input id="login-email" type="email" placeholder="Email" required>
     <br>
-    <input type="password" placeholder="Password" required>
+    <input id="login-pass"type="password" placeholder="Password" required>
     <br>
-     <input class="btn btn-log-in" type="image" src="img/buttons/LogInB.svg" ALT="Log In">
+    <button class="btn btn-default" onclick="signUserIn()">Login</button>
   </div>
 </div>
 <div id="signup" class="overlay">

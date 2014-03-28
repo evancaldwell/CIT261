@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Nagger</title>
+<meta charset="utf-8" />
+<meta name="keywords" content="personal, productivity, task management, GTD">
+<meta name="description" content="Best personal productivity, task management app ever!">
+<script type="text/javascript" src="js/server.js"></script>
+<script type="text/javascript" src="js/nagger.js"></script>
+<script type="text/javascript" src="js/dataHandler.js"></script>
+</head>
+<body>
+<input type="button" value="Sign In" onClick="signUserIn()">
+<br><br>
+<input type="button" value="Get Main List" onClick="getUserList()">
+<br><br>
+<input type="button" value="Get Sub Items for Item One" onClick="getSubitems('8843h5345h34u5h435hh345')">
+<br><br>
+<input type="button" value="Get Tag Cloud" onClick="getTagCloud()">
+<br><br>
+<input type="button" value="Insert Item" onClick="insertNewItem()">
+<br><br>
+<input type="button" value="Show Cookie" onClick="showCookie()">
+<div id="json"></div>
+</body>
+</html>
