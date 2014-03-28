@@ -1,57 +1,138 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Nagger</title>
-<meta charset="utf-8" />
-<meta name="keywords" content="personal, productivity, task management, GTD">
-<meta name="description" content="Best personal productivity, task management app ever!">
-<link href="css/style.css" rel="stylesheet">
-<script type="text/javascript" src="js/server.js"></script>
-<script type="text/javascript" src="js/nagger.js"></script>
-
+  <title>Nagger</title>
+  <meta charset="utf-8" />
+  <meta name="keywords" content="personal, productivity, task management, GTD">
+  <meta name="description" content="Best personal productivity, task management app ever!">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scaleable=no">
+  <link href="css/style.css" rel="stylesheet">
+  <script type="text/javascript" src="js/server.js"></script>
+  <script type="text/javascript" src="js/nagger.js"></script>
+  <script type="text/javascript" src="js/dataHandler.js"></script>
 </head>
-<body>
+<body onload="setup();">
 <div id="container">
   <div class="header"> <img class="logo-img" src="" alt="">
-    <div class="logo-txt">
+    <div>
+        <img src="img/naggerlogo.svg">
       <h1>Nagger</h1>
     </div>
   </div>
   <div id="main">
     <ul class="item-list main-item-list">
-      <li> <img src="" alt="">
-        <p>Dig a hole in the back yard</p>
+      <li>
+        <div class="item-face"><img src="" alt=""></div>
+        <div class="item-text"><p>Dig a hole in the back yard</p></div>
+        <div class="item-action" onclick="showTooltip(this);">
+          <p>...</p>
+          <div>
+            <ul>
+              <li>edit</li>
+              <li>delete</li>
+            </ul>
+          </div>  
+        </div>
       </li>
-      <li> <img src="" alt="">
-        <p>Pick up one of the kids from soccer</p>
+      <li>
+        <div class="item-face"><img src="" alt=""></div>
+        <div class="item-text"><p>pick up kids from soccer</p></div>
+        <div class="item-action" onclick="showTooltip(this);">
+          <p>...</p>
+          <div>
+            <ul>
+              <li>edit</li>
+              <li>delete</li>
+            </ul>
+          </div>  
+        </div>
       </li>
-      <li> <img src="" alt="">
-        <p class="dropdown">Finish CIT 261 project<span>&nbsp;&nbsp;&nbsp;></span></p>
-        <ul class="sublist">
+      <li class="sublist"> 
+        <div class="item-face"><img src="" alt=""></div>
+        <div class="item-text has-sublist" onclick="showSublist(this);"><p class="dropdown">Finish CIT 261 project<span class="icon-dropdown">></span></p></div>
+        <ul>
           <li>final design</li>
           <li>HTML/CSS</li>
           <li>JS</li>
         </ul>
+        <div class="item-action" onclick="showTooltip(this);">
+          <p>...</p>
+          <div>
+            <ul>
+              <li>edit</li>
+              <li>delete</li>
+            </ul>
+          </div>  
       </li>
-      <li> <img src="" alt="">
-        <p>Eat the cake in the fridge</p>
+      <li>
+        <div class="item-face"><img src="" alt=""></div>
+        <div class="item-text"><p>eat the cake in the fridge</p></div>
+        <div class="item-action" onclick="showTooltip(this);">
+          <p>...</p>
+          <div>
+            <ul>
+              <li>edit</li>
+              <li>delete</li>
+            </ul>
+          </div>  
+        </div>
       </li>
-      <li> <img src="" alt="">
-        <p>Integrate Br. Barney's face into the app design somehow</p>
+      <li>
+        <div class="item-face"><img src="" alt=""></div>
+        <div class="item-text"><p>integrate Br. Barney's face into the app</p></div>
+        <div class="item-action" onclick="showTooltip(this);">
+          <p>...</p>
+          <div>
+            <ul>
+              <li>edit</li>
+              <li>delete</li>
+            </ul>
+          </div>  
+        </div>
       </li>
-      <li> <img src="" alt="">
-        <p>Become world's best developer</p>
+      <li>
+        <div class="item-face"><img src="" alt=""></div>
+        <div class="item-text"><p>Dig a hole in the back yard</p></div>
+        <div class="item-action" onclick="showTooltip(this);">
+          <p>...</p>
+          <div>
+            <ul>
+              <li>edit</li>
+              <li>delete</li>
+            </ul>
+          </div>  
+        </div>
       </li>
-      <li> <img src="" alt="">
-        <p>Think of another task to add</p>
+      <li>
+        <div class="item-face"><img src="" alt=""></div>
+        <div class="item-text"><p>Dig a hole in the back yard</p></div>
+        <div class="item-action" onclick="showTooltip(this);">
+          <p>...</p>
+          <div>
+            <ul>
+              <li>edit</li>
+              <li>delete</li>
+            </ul>
+          </div>  
+        </div>
       </li>
     </ul>
   </div>
   <div id="action-bar">
-    <div id="add-item-btn" onclick="createItemView(this);">
+    <div id="add-item-btn" onclick="showLogin
+        
+        
+        
+        
+        View(this);">
+      <img class="btn-add-new" src="img/icons/glyphicons_190_circle_plus.png" alt="add new item">
+    </div> 
+      <div id="add-item-btn" onclick="showNewItemView(this);">
       <img class="btn-add-new" src="img/icons/glyphicons_190_circle_plus.png" alt="add new item">
     </div>
-    <img class="cloud-icon" src="img/icons/glyphicons_412_cloud_plus.png" alt="cloud">
+    <div id="wordcloud-btn" class="btn-cloud" onclick="buildWordCloud(this, showWordcloudView);">
+      <img class="cloud-icon" src="img/icons/glyphicons_412_cloud_plus.png" alt="cloud">
+    </div>
   </div>
 
 <!-- ============= Hidden divs ============= -->
@@ -62,11 +143,11 @@
     </div>
   </div>
   <div class="form form-auth">
-    <input type="email" placeholder="Email" required>
+    <input id="login-email" type="email" placeholder="Email" required>
     <br>
-    <input type="password" placeholder="Password" required>
+    <input id="login-pass" type="password" placeholder="Password" required>
     <br>
-    <button class="btn btn-default">Login</button>
+    <button class="btn btn-default" onclick="signUserIn()">Login</button>
   </div>
 </div>
 <div id="signup" class="overlay">
@@ -91,21 +172,27 @@
     <button class="btn btn-default">Sign Up</button>
   </div>
 </div>
-<div id="new-item" class="overlay">
-  <h2>Add a new item</h2>
-  <textarea name="newItemInput" id="new-item-input" cols="30" rows="10" class="item-input"></textarea>
-  <div class="done-o-meter"> <img src="" alt=""> <img src="" alt="">
-    <div class="done-o-meter-bar"> </div>
+<div id="new-item" class="overlay" onclick="hideView(this);">  <!-- TODO: This is applying the onclick to the overlay-inner div as well -->
+  <div class="overlay-inner">
+    <div class="btn btn-default btn-close" onclick="hideView(this.parentNode);" >x</div>
+    <h2>Add a new item</h2>
+    <textarea name="newItemInput" id="new-item-input" cols="30" rows="10" class="item-input"></textarea>
+    <div class="done-o-meter"> <img src="" alt=""> <img src="" alt="">
+      <div class="done-o-meter-bar"> </div>
+    </div>
+    <div class="new-sublist">
+      <!-- <p>Add a sub-item</p> -->
+      <div class="btn btn-add-sub">+ Add a sub-item</div>
+    </div>
+    <button>Add Another Item</button>
+    <button>Save</button>
   </div>
-  <div class="sublist">
-    <p>Add a sub-item</p>
-    <button class="btn btn-add-new">+</button>
-  </div>
-  <button>Add Another Item</button>
-  <button>Save</button>
 </div>
-<div id="wordcloud" class="overlay">
-  <p class="cloud-word">Family</p>
+<div id="wordcloud" class="overlay" onclick="hideView(this);">
+  <div class="overlay-inner">
+    <div class="btn btn-default btn-close" onclick="hideView(this.parentNode.parentNode);" >x</div>
+    <div id="wordcloud-inner"></div>
+  </div>
 </div>
 </body>
 </html>
