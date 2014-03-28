@@ -25,7 +25,7 @@ function allDone(theDataWeGotBack) {
 function setup() {
 	var loginCookie = readCookie('NAGSESSION')
 	showCookie()
-	// var loginCookie = true
+	// var loginCookie = false
 	if (loginCookie == false || loginCookie == null) {
 		showLoginView()
 	}
@@ -85,7 +85,7 @@ function showNewItemView(el) {
 function showLoginView() {
 	var viewWidth = $('container').offsetWidth
 	var viewHeight = $('container').offsetHeight
-	var div = $('login')
+	var div = $('auth')
 	var wordcloud = $('wordcloud')
 	var newItemView = $('new-item')
 	var signup = $('signup')
@@ -107,6 +107,29 @@ function hideView(el, trans) {
 		hideTransparency()
 	}
 }
+
+function showRegisterView(el) {
+	var pass2Input = $('pass2')
+	var btn = $('login-btn')
+	pass2Input.style.height = 'auto'
+	pass2Input.style.border = '1px solid #587C7C'
+	pass2Input.style.padding = '2px'
+	btn.innerHTML = 'Register'
+	el.innerHTML = 'Back to login'
+	el.onclick = function() {backToLoginView(this)}
+}
+
+function backToLoginView(el) {
+	var pass2Input = $('pass2')
+	var btn = $('login-btn')
+	pass2Input.style.height = '0'
+	pass2Input.style.border = '0'
+	pass2Input.style.padding = '0'
+	btn.innerHTML = 'Login'
+	el.innerHTML = "Don't have an account? Register here."
+	el.onclick = function() {showRegisterView(this)}
+}
+
 
 function showTransparency() {  // TODO: this peice is not working
 	var div = $('transparency')
@@ -148,7 +171,6 @@ function hideTooltip(el) {
 	div.style.height = '0px'
 	el.onclick = function() {showTooltip(this)}
 }
-
 
 
 // =========== Playing with the word cloud ================

@@ -127,7 +127,7 @@
   </div>
 
 <!-- ============= Hidden divs ============= -->
-<div id="login" class="overlay">
+<div id="auth" class="overlay">
   <div> <img class="logo-img" src="" alt="">
     <div class="logo-txt">
       <h1>Nagger</h1>
@@ -139,28 +139,7 @@
     <input id="login-pass" type="password" placeholder="Password" required>
     <br>
     <button class="btn btn-default" onclick="signUserIn()">Login</button>
-  </div>
-</div>
-<div id="signup" class="overlay">
-  <div> <img src="" alt="" class="logo-img">
-    <div class="logo-txt">
-      <h1>Nagger</h1>
-    </div>
-  </div>
-  <div class="form form-auth">
-    <input type="email" placeholder="Email" required>
-    <br>
-    <input type="password" placeholder="Password" required>
-    <br>
-    <input type="password" placeholder="Confirm Password" required>
-    <br>
-    <input type="text" placeholder="First Name">
-    <br>
-    <input type="text" placeholder="Last Name">
-    <br>
-    <input type="text" placeholder="Phone Number">
-    <br>
-    <button class="btn btn-default">Sign Up</button>
+    <a id="register-link" onclick="showRegisterView(this)">Don't have an account? Register here.</a>
   </div>
 </div>
 <div id="new-item" class="overlay">
