@@ -23,8 +23,10 @@ function allDone(theDataWeGotBack) {
 
 //A function for setting up the page oncreate
 function setup() {
-	var loginCookie = true
-	if (loginCookie == false) {
+	var loginCookie = readCookie('NAGSESSION')
+	showCookie()
+	// var loginCookie = true
+	if (loginCookie == false || loginCookie == null) {
 		showLoginView()
 	}
 	var newItemBtn = $('add-item-btn');

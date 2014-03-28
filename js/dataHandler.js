@@ -4,6 +4,8 @@
 var server = new talkToServer('/cit261/backend/nag.php')
 
 function signUserIn() {
+	var username = 'Sarah'
+	var password = 'testing'
 	var username = $('login-email').value
 	var password = $('login-pass').value
 	console.log("username: " + username + " | password: " + password)
