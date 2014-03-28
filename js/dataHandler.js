@@ -24,6 +24,10 @@ function getTagCloud() {
 	server.sendData('POST', 'getTagCloud', '', logIt)
 }
 
+function insertNewItem() {
+	server.sendData('POST', 'insertItem', [{"name":"Christmas Shopping","rate":"5","subItems":["Kit Kats","Swedish Fish","Chips"]}], logIt)
+}
+
 function logIt(theDataWeGotBack) {
 	console.log(theDataWeGotBack)
 }
