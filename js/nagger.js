@@ -18,3 +18,18 @@ function iClickedIt() {
 function allDone(theDataWeGotBack) {
 	console.log(theDataWeGotBack)
 }
+
+function showSublist(el){
+    var sublist = el.getElementByTagName ("UL")[0];
+    //get the child that is the ul
+}
+
+/*function sublist(){
+    $('ul li.dropdown > a').click(function(event){
+        $(this).parent().find('ul').slideToggle('slow');
+    });
+        $('a.on').click(function(){
+        $('a.on').removeClass("active");
+        $(this).addClass("active");
+    });
+}*/
