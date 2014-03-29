@@ -6,6 +6,7 @@ $hashMap = array(
 , 'getSubItems' => getSubItems
 , 'getTagCloud' => getTagCloud
 , 'insertItem' => insertItem 
+, 'deleteItem' => deleteItem
 );
 
 function signInUser($dataIn, $user_id) {
@@ -14,6 +15,9 @@ function signInUser($dataIn, $user_id) {
 	$checkCredentials = mdl_checkCredentials($username, $password);
 	if (count($checkCredentials) == 1) {
 		$_SESSION['user_id'] = $checkCredentials[0]['user_id'];
+		
+		updateRatesAndDates($_SESSION['user_id']);
+		
 		return '1';
 	} else {
 		return '0';
@@ -21,6 +25,7 @@ function signInUser($dataIn, $user_id) {
 }
 
 function getUserList($dataIn, $user_id) {
+	updateRatesAndDates($user_id);
 	$dataOut = mdl_getItems($user_id);
 	echo json_encode($dataOut);
 }
@@ -62,6 +67,36 @@ function insertItem($dataIn, $user_id) {
 			mdl_updateTagCount($user_id, $checkWord[0]['tag_id']);
 		}
 	}
+}
+
+function deleteItem($dataIn, $user_id) {
+	$item_id = $dataIn[0]['item_id'];
+	mdl_deleteItem($item_id, $user_id);
+}
+
+function updateRatesAndDates($user_id) {
+	if ($_SESSION['lastUpdated'] == date('Y-m-d')) {
+		return;
+	}
+	$itemData = mdl_getAllItems($user_id);
+	if (empty($itemData)) {
+		return;
+	}
+	$today = new DateTime();
+	foreach ($itemData as $item) {
+		$rate_date = new DateTime($item['rate_date']);
+		$rate_id = $itemData[0]['rate_id'];
+		for ($i=$rate_id; $i > 1; $i--) {
+			if ($rate_date->modify("+$i days") < $today) {
+				$newRate = $i - 1;
+				$rateChanged = true;
+			}
+		}
+		if ($rateChanged) {
+			mdl_updateRate($item['item_id'], $user_id, $newRate, $today->format('Y-m-d'));
+		}
+	}
+	$_SESSION['lastUpdated'] = date('Y-m-d');
 }
 
 function hashPassword($username, $password) {

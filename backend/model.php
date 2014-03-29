@@ -190,4 +190,51 @@ function mdl_updateTagCount($user_id, $newTagId) {
 	catch (PDOException $exc) {
 	}
 }
+function mdl_deleteItem($item_id, $user_id) {
+	global $db;
+	global $database;
+	$sql = "DELETE FROM item WHERE item_id = :item_id AND user_id = :user_id";
+	try {
+		$stmt = $db->prepare($sql);
+		$stmt->bindValue(':item_id', $item_id);
+		$stmt->bindValue(':user_id', $user_id);
+		$stmt->execute();
+		$stmt->closeCursor();
+	}
+	catch (PDOException $exc) {
+	}
+}
+
+function mdl_getAllItems($user_id) {
+	global $db;
+	global $database;
+	$sql = "SELECT item_id, rate_id, rate_date FROM item WHERE user_id = :user_id AND rate_id <> 1";
+	try {
+		$stmt = $db->prepare($sql);
+		$stmt->bindValue(':user_id', $user_id);
+		$stmt->execute();
+		$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+		$stmt->closeCursor();
+		return $result;
+	}
+	catch (PDOException $exc) {
+	}
+}
+function mdl_updateRate($item_id, $user_id, $rate_id, $rate_date) {
+	global $db;
+	global $database;
+	$sql = "UPDATE item SET rate_id = :rate_id WHERE item_id = :item_id AND user_id = :user_id;";
+	$sql.= "UPDATE item SET rate_date = :rate_date WHERE item_id = :item_id AND user_id = :user_id;";
+	try {
+		$stmt = $db->prepare($sql);
+		$stmt->bindValue(':rate_id', $rate_id);
+		$stmt->bindValue(':item_id', $item_id);
+		$stmt->bindValue(':user_id', $user_id);
+		$stmt->bindValue(':rate_date', $rate_date);
+		$stmt->execute();
+		$stmt->closeCursor();
+	}
+	catch (PDOException $exc) {
+	}
+}
 ?>
