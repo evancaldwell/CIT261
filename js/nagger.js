@@ -1,8 +1,3 @@
-//Main Functions For Nag App
-
-//Initialize the ability to talk to the server
-var server = new talkToServer('/backend/server.php')
-
 //General Functions for Nag App
 
 //Use the Following Funtion for all document.getElementById calls
