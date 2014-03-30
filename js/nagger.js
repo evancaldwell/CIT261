@@ -25,7 +25,7 @@ function allDone(theDataWeGotBack) {
 function setup() {
 	var loginCookie = readCookie('NAGSESSION')
 	showCookie()
-	// var loginCookie = false
+	// var loginCookie = true
 	if (loginCookie == false || loginCookie == null) {
 		showLoginView()
 	}

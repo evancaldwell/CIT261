@@ -7,6 +7,7 @@ function talkToServer(url) {
 		var request = new XMLHttpRequest()
 		request.open(requestType, url, true)
 		var jsonString = JSON.stringify(data)
+		alert(jsonString)
 		request.onreadystatechange = function() {
 			if (request.readyState == 4 && request.status == 200) {
 				var responseString = request.responseText
